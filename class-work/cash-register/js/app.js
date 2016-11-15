@@ -15,4 +15,21 @@
 
 $(document).ready(function () {
 
+    var totalText = 0;
+
+  $('#entry').submit(function (event) {
+    event.preventDefault ();
+
+    var number = $('#newEntry').val();
+    var parseNum = parseFloat(number);
+
+    totalText += parseNum;
+    $('#newEntry').val('');
+
+    $('#total').text('$' + totalText + '');
+
+    $('#entries').append('<tr><td></td><td>' + number + '</td></tr>');
+
+  })
+
 })
