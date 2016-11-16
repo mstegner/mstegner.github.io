@@ -146,6 +146,19 @@ header {
 	border: 2px solid white;
 }
 
+.musicplayer {
+	width: 250px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.musicplayer p {
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: .1em;
+	font-weight: 700;
+}
+
 
 .main {
 	padding: 100px;
@@ -153,11 +166,20 @@ header {
 }
 
 .maintextbox {
-	width: 100%;
+	width: 60%;
 	margin: 0 auto;
 }
 
 .main p {
+	font-size: 21px;
+	line-height: 1.6;
+	margin: 0 auto;
+	text-align: left;
+	color: black;
+	width: 60%;
+}
+
+.maintextbox p ul li {
 	font-size: 21px;
 	line-height: 1.6;
 	margin: 0 auto;
@@ -188,7 +210,9 @@ header {
 .iconbox p, a {
 	text-align: center;
 	font-size: 20px;
-	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: .05em;
+	font-weight: 700;
 	color: black;
 	margin: 0;
 	text-decoration: none;
@@ -221,7 +245,6 @@ header {
 	background: rgb(222, 227, 234);
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	padding: 10px 10px 100px 10px;
 }
 
@@ -262,14 +285,25 @@ h2 {
 	margin-left: 30px;
 }
 
-.beachcard, .lessoncard {
+.beachcard {
 	background: white;
 	box-shadow: 2px 2px 12px 0px 
 	rgba(122, 122, 122, 0.5);
-	height: 600px;
+	height: 500px;
+	margin: 30px;
+	flex: 1;
+	overflow: auto; 
+}
+
+.lessoncard {
+	background: white;
+	box-shadow: 2px 2px 12px 0px 
+	rgba(122, 122, 122, 0.5);
+	overflow: auto;
 	margin: 30px;
 	flex: 1;
 }
+
 
 .lessonsblurb {
 	margin: 20px;
@@ -291,6 +325,8 @@ h2 {
 .beachcard p {
 	font-size: 15px;
 	line-height: 1.5;
+	padding: 0 20px 20px 20px;
+
 }
 
 .beachcard h2, a {
@@ -298,6 +334,8 @@ h2 {
 	font-weight: 700;
 	font-size: 18px;
 	text-align: left;
+	padding: 10px 20px 0 20px;
+	margin: 0;
 }
 
 .maintextbox ul, li {
@@ -306,6 +344,39 @@ h2 {
 	color: black;
 	text-align: left;
 	text-decoration: none;
+}
+
+.beachconditions {
+	width: 100%;
+	margin: 50px auto;
+
+}
+
+.beachconditions h3 {
+	font-family: 'Georgia', serif;
+	font-size: 34px;
+	text-align: center;
+	margin: 200px auto 100px auto;
+
+}
+
+.linkbutton {
+	border: 3px black solid;
+	width: 200px;
+	margin: 50px auto;
+	padding: 10px;
+	background-color: white;
+
+}
+
+.linkbutton p {
+	text-align: center;
+	font-family:'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	margin: 0 auto;
+	color: black;
+
 }
 
 
@@ -429,13 +500,21 @@ h3 {
 }
 
 footer {
-	text-align: center;
+	background-color: black;
+	width: 100%;
+	padding: 50px;
+	margin: 100px 0 0 0;
+
 
 }
 
 footer p {
-	text-align: center;
-	font-size: 20px;
-	color: black;
-	padding: 10px;
+	font-family:'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: left;
+	letter-spacing: .05em;
+	color: white;
+	padding: 20px;
+	margin: 20px;
 }
