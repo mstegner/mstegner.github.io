@@ -229,6 +229,15 @@ header {
 	float: right;
 }
 
+.boardblurb {
+	font-family: 'Georgia', serif;
+	font-size: 18px;
+	text-align: left;
+	width: 50%
+	padding: 10px;
+	margin: 0 auto;
+}
+
 .blackbullet {
 	background: black;
 	color: white;
@@ -268,15 +277,37 @@ header {
 }
 
 .suits {
-	width: 100%;
-	margin: 100px auto;
-	padding: 0px;
-	text-align: center;
+	width: 90%;
+	margin: 50px auto;
+	padding: 0 200px 0 200px;
 }
 
 .wetsuiticons {
-	width: 100%;
+	width: 85%;
 	margin: 0 auto;
+	display: flex;
+}
+
+.wetsuitdetail {
+	flex: 1;
+	margin: 20px auto;
+	padding: 10px;
+	overflow: auto;
+
+}
+
+.wetsuitdetail img {
+	margin: 0 auto;
+	width: 40%;
+}
+
+.wetsuitblurb {
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: .05em;
+	font-weight: 700;
+	color: black;
+	font-size: 18px;
+	text-align: left;
 }
 
 h2 {
@@ -357,6 +388,7 @@ h2 {
 	font-size: 34px;
 	text-align: center;
 	margin: 200px auto 100px auto;
+	width: 50%;
 
 }
 
@@ -381,28 +413,36 @@ h2 {
 
 
 .surfboards {
-	margin: 200px auto;
+	margin: 10% auto;
 	border: 7px black solid;
-	padding: 10px 10px 10px 20px;
-	width: 80%;
+	padding: 50px;
+	width: 90%;
 }
 
 .surfboards h1 {
-	text-decoration: none;
+	text-shadow: none;
 	color: black;
-	font-size: 55px;
+	font-size: 45px;
 	letter-spacing: 0.2em;
-	line-height: 1;
+	line-height: 1.5;
 	text-align: center;
-	margin: 0 auto;
+	margin: 30px auto;
 	padding: 0;
 	overflow: hidden;
+}
+
+.surfboards h3 {
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Georgia', serif;
+	margin: 10px auto;
+
 }
 
 .surfboards p {
 	text-align: center;
 	margin: 0 auto;
-	padding: 30px 0 0 0;
+	padding: 30px 0 70px 0;
 }
 
 .clear {
@@ -414,6 +454,12 @@ h2 {
 	padding: 0;
 	align-items: center;
 }
+
+
+.board {
+	width: 13%;
+}
+
 
 .imagegallery {
 	width: 75%
