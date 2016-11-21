@@ -10,7 +10,7 @@ function initMap() {
 // function renderMarkers () {
 //   var marker = new google.maps.Marker( {
 //     position: {lat: 40.7128, lng: -74.0059},
-//     map: map
+//     map: map;
 //   });
 
 // }

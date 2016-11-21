@@ -37,42 +37,54 @@
   </div>
 
   <div class="main">
-  	<p>There are many good places to surf, some of which you can get to by subway or commuter train. Hover over each beach location for more details. This map shows some of the more popular beaches, but there are many more, lesser known areas to surf all along the southern shore of Long Island.</p>
+  	<p>There are a few good places to surf, some of which you can get to by subway or commuter train. The map below shows a few popular beaches that are easy to get to by subway or car, and have lots of amenities nearby.</p>
   </div>
 
-    <!google map api placeholder>
+  <!music div>
+    <div class="musicplayer">
+      <p>PLAY MUSIC?</p>
+        <audio controls>
+          <source src="audio/dointime.m4a" type="audio/mp4">
+        </audio>
+      </div>
 
-    <div class="map">
-      <img src="images/map_placeholder.jpg" width=100%>
+   <!end of music div> 
 
-    </div>
+    <div id="map"></div>  <!Google Map>
+
+
+    <!beach details div>
 
     <div class="greybox">
-      
-      <div class="beachcard">
-        <img src="images/beach_rock1.jpg" width=100%>
-        <h2>BEACH 92ND STREET, ROCKAWAY</h2>
-        <p>Rockaway's main surfing beach is just blocks from the A train and perhaps New York's most crowded breaks. It's also one of the more dangerous and challenging waves-steep, fast, and often unpredictable. The congestion can make the natives (or those claiming to be natives) testy.
-        </p>
+
+
+      <div id="thumbnails">
+        <img class="thumb" id="first" src="images/beach_rock1.jpg">
+
+        <img class="thumb" id="second" src="images/beach_rock2.jpg">
+
+        <img class="thumb" id="third" src="images/beach_longbeach1.jpg">
+
+        <img class="thumb" id="fourth" src="images/beach_longbeach2.jpg">
       </div>
 
-      <div class="beachcard">
-        <img src="images/beach_rock2.jpg" width=100%>
-        <h2>BEACH 67TH STREET, ROCKAWAY</h2>
+          <div class="clear"></div>
+
+      <div class="beachdetail">
+        <img id="bigimage" src="images/beach_rock1.jpg">
+        <p class="beachcard"><b>Beach 92nd Street, Rockaway: </b>Rockaway's main surfing beach is just blocks from the A train and perhaps New York's most crowded breaks. It's also one of the more dangerous and challenging waves-steep, fast, and often unpredictable. The congestion can make the natives (or those claiming to be natives) testy.</p>
+      </div>
+    </div>
+
+<!--         <h2>BEACH 67TH STREET, ROCKAWAY</h2>
         <p>Rock’s other surfing beach is every bit as steep and erratic as the break at 92nd Street, though not nearly as crowded or hostile, making it a better spot for learning. Novice surfers should stay aware of the wooden pilings protruding from the shoreline before catching a wave.</p>
-      </div>
 
-      <div class="beachcard">
-        <img src="images/beach_longbeach1.jpg" width=100%>
         <h2>LINCOLN BOULEVARD, LONG BEACH</h2>
-        <p>Mellow and incredibly predictable, the break is excellent for beginners (and located just a few blocks from the LIRR station and Unsound surf shop, where you can rent a board). Best spot for a post-surf nosh: the Beach House on West Beech Street.</p>
-      </div>
+        <p>Mellow and incredibly predictable, the break is excellent for beginners (and located just a few blocks from the LIRR station and Unsound surf shop, where you can rent a board). Best spot for a post-surf nosh: the Beach House on West Beech Street.</p> -->
 
-      <div class="beachcard">
-        <img src="images/beach_longbeach2.jpg" width=100%>
-        <h2>NATIONAL BOULEVARD, LONG BEACH</h2>
-        <p>The consistent, user-friendly wave was one of the best-kept secrets of the Long Beach surf scene for years. Then came the posh Allegria Hotel, a National Boulevard surf cam (nysea.com), and the ongoing ASP World Tour event, all of which means its low-flying days are done.</p>
-      </div>
+       <!--  <h2>NATIONAL BOULEVARD, LONG BEACH</h2>
+        <p>The consistent, user-friendly wave was one of the best-kept secrets of the Long Beach surf scene for years. Then came the posh Allegria Hotel, a National Boulevard surf cam (nysea.com), and the ongoing ASP World Tour event, all of which means its low-flying days are done.</p> -->
+
 
     </div>    <!end of grey box div>
 
@@ -82,7 +94,7 @@
       <h3>Before you head out to a beach for surfing, you'll want to check the surf report to find out wave height, swell direction, tide schedule, and wind speeds. Here is an excellent guide to understanding how to read a surf report</h3>
 
       <div class="linkbutton">
-        <a href src=http://learntosurfkona.com/featured/how-to-read-a-surf-report target="_blank">SURF REPORT</a>
+        <a href=http://learntosurfkona.com/featured/how-to-read-a-surf-report target="_blank">SURF REPORT</a>
       </div>
 
 
@@ -103,12 +115,22 @@
 
 
       <footer>
-        <p>Some kinda footer here!</p>
+          <p class="footer">maria.stegner@gmail.com 
+
+          <a href="http://www.mariastegner.com" target='_blank'><img src='images/footer_website.png'></a>
+          <a href="https://twitter.com/maria_stegner" target="_blank"><img src="images/footer_twitter.png"></a>
+          <a href="https://www.instagram.com/mariastegnerz/" target='_blank'><img src="images/footer_instagram.png"></a>
+          <a href="https://www.linkedin.com/in/maria-stegner-2333b14" target='_blank'><img src="images/footer_linkedin.png"></a>
+          <a href="https://medium.com/@maria.stegner" target='_blank'><img src="images/footer_medium.png"></a>
+          </p>
       </footer>
+  
 
-    </div>  <!end of page div>
+  </div>  <!end of page div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdT2fgiN3Qz1YVOj2f-pzK_UfxjLr47u8"></script>
     <script src="js/surf.js"></script>
 
   </body>
