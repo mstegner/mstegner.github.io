@@ -19,7 +19,7 @@ $('.linkbutton').mouseenter(function () {
 
 	$(this).css('background-color', 'white');
 
-	$('linkbutton a').css('color', 'black');
+	$(this).find('p').css('color', 'black');
 
 });
 
@@ -28,7 +28,7 @@ $('.linkbutton').mouseleave(function () {
 
 	$(this).css('background-color', 'black');
 
-	$('linkbutton a').css('color', 'white');
+	$(this).find('p').css('color', 'white');
 
 });
 
@@ -72,8 +72,8 @@ $(".board").hover(function(){
     });
 });
 
-$('.board #gun').click(function(){
-	$('.boardicons').append('<p>' + 'Gun: This is the gun board.' + '</p>');
+$('#gun').click(function(){
+	$('#boardicons').append('<p>' + 'Gun: This is the gun board.' + '</p>');
 
 });
 
@@ -108,6 +108,12 @@ function initMap() {
 		position: {lat: 40.583634, lng: -73.814789},
 		map: map
 	});
+
+  marker1.addListener('click', function() {
+    // your custom code to add text to each beach marker
+    // $('#mydiv').text('some beach')
+  });
+
 	var marker2 = new google.maps.Marker( {
 		position: {lat: 40.5909, lng: -73.7969},
 		map: map
