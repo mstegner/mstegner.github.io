@@ -69,26 +69,35 @@
 
     </div>      <!end of surfboards box>
 
-    <div class="greybox2">
+    <div class="blackbox">
 
       <!surfboard sizing form >
 
-      <h3>Longboard sizing guide</h3>
-      <p class="boardform">Enter your height</p>
-
+      <h1>Longboard sizing guide</h1>
+      <p class="boardform">Select your height</p>
       <div class="form">
-        <input type="text" name="feet" size="1" maxlength="1" />ft
-        <input type="text" name="inches" size="2" maxlength="2" />in 
+        <select name="height">
+          <option value="value1" selected>5'0"-5'6"</option>
+          <option value="value2">5'7"-6'0"</option>
+          <option value="value3">6'1"-6'4"</option>
+          <option value="value4">6'5"+</option>
+        </select>
       </div>
 
-      <p class="boardform">Enter your weight</p>
+      <p class="boardform">Select your weight</p>
       <div class="form">
-
-        <input type="text" name="pounds" size="3" maxlength="3" />lbs
+        <select name="weight">
+          <option value="value1" selected>100-140 lbs</option>
+          <option value="value2">141-170 lbs</option>
+          <option value="value3">171-200 lbs</option>
+          <option value="value4">201-230 lbs</option>
+          <option value="value5">231+ lbs</option>
+        </select>      
       </div>
 
       <div class="form">
-        <div class="linkbutton">Calculate</div>
+        <div class="linkbutton2">SIZE MY BOARD</div>
+        <div id="boardsize"></div>
       </div>
     </div> <!end of greybox, "main" div>
 
@@ -104,7 +113,7 @@
 
 
     <div class="main">
-      <p>In warm weather, you can surf in your bathing suit. As the water and air temps get colder, you'll want to wear either a wetsuit top, spring suit, or full wetsuit. In colder months, you will need gloves, booties and a hood. Wetsuits come in different thicknesses for extra warmth.</p>
+      <p>In warm weather, you can surf in your bathing suit. As the water and air temps get colder, you'll want to wear either a wetsuit top, spring suit, or full wetsuit. In colder months, you will need gloves, booties and a hood. Wetsuits come in different thicknesses for extra warmth.</p><br>
 
       <p>Wetsuits are made of a synthetic material called foam neoprene, which provides insulation to help your body combat heat loss in cold water. Unlike a dry suit, a wetsuit isn’t completely watertight, and allows small amounts of water to enter the suit, usually through the arm, leg and neck openings or through the zipper. This thin layer of water remains against your skin, but is much easier for your body to warm than the surrounding water outside the suit. Wetsuits are also designed to minimize the exchange of water between the interior and exterior, so your body doesn’t have to work as hard to stay warm. The thicker the neoprene, the more insulation it provides.
       </p>

@@ -15,22 +15,22 @@ $('.navbar a').mouseleave(function() {
 
 //link button color change on mouseenter/mouseleave
 
-$('.linkbutton').mouseenter(function () {
+// $('.linkbutton').mouseenter(function () {
 
-	$(this).css('background-color', 'white');
+// 	$(this).css('background-color', 'white');
 
-	$(this).find('p').css('color', 'black');
+// 	$(this).find('p').css('color', 'black');
 
-});
+// });
 
 
-$('.linkbutton').mouseleave(function () {
+// $('.linkbutton').mouseleave(function () {
 
-	$(this).css('background-color', 'black');
+// 	$(this).css('background-color', 'black');
 
-	$(this).find('p').css('color', 'white');
+// 	$(this).find('p').css('color', 'white');
 
-});
+// });
 
 //lessons blurb link color change on mouseenter/mouseleave
 
@@ -72,10 +72,36 @@ $(".board").hover(function(){
     });
 });
 
-$('#gun').click(function(){
-	$('#boardicons').append('<p>' + 'Gun: This is the gun board.' + '</p>');
 
+// surfboard click function to display text for each type of surfboard
+
+$('#gun').click(function(){
+
+	if ($('#boardicons p').text)
+
+	$('#boardicons p').append('This is the gun board.');
 });
+
+$('#sup').click(function(){
+	$('#boardicons p').append('This is the stand-up paddle board.');
+});
+
+$('#longboard').click(function(){
+	$('#boardicons p').append('This is the longboard.');
+});
+
+$('#funboard').click(function(){
+	$('#boardicons p').append('This is the funboard.');
+});
+
+$('#hybrid').click(function(){
+	$('#boardicons p').append('This is the hybrid board.');
+});
+
+$('#fish').click(function(){
+	$('#boardicons p').append('This is the fish board.');
+});
+
 
 
 // surfboard sizing calculator
