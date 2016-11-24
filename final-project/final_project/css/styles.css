@@ -16,7 +16,7 @@ p, h2, h3, a, ul {
 
 h1 {
 	font-family: 'Knewave', cursive;
-  	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 	color: white;
 	font-size: 60px;
 	letter-spacing: 0.15em;
@@ -46,6 +46,61 @@ h2 {
 
 .knewaveblack h2 {
 	color: black;
+}
+
+.surfterms {
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.lingo_row1, .lingo_row2, .lingo_row3 {
+	width: 75%;
+	display: flex;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#lingo_kook, #lingo_grom, #lingo_hangten, #lingo_noah, #lingo_foamie, #lingo_barrel,
+#lingo_partywave, #lingo_lineup, #lingo_popup {
+	width: 8%;
+	height: 100px;
+	margin: 0 auto;
+	padding: 10px 10px 30px 10px;
+	text-align: center;
+	transition: all .2s ease-in-out;
+	flex: 1;
+}
+
+#word_kook, #word_grom, #word_hangten, #word_noah, #word_foamie,
+#word_barrel, #word_partywave, #word_lineup, #word_popup {
+	font-family: 'Knewave', cursive;
+	font-size: 24px;
+	letter-spacing: .1em;
+	color: white;
+	text-align: center;
+	flex: 1;
+	margin: 0 auto;
+}
+
+#def_kook, #def_grom, #def_hangten, #def_noah, #def_foamie, #def_barrel,
+#def_partywave, #def_lineup, #def_popup {
+	font-family: 'Georgia', serif;
+	font-size: 13px
+	letter-spacing: .005em;
+	color: white;
+	text-align: center;
+	display: none;
+	margin: 0 auto;
+}
+
+#lingo_kook:hover #def_kook {
+	display: block;
+}
+
+#lingo_kook:hover #word_kook {
+	color: #03b73f;
+	transform: scale(1.1);
 }
 
 body {
