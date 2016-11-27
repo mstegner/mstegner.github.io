@@ -2,105 +2,108 @@ $(document).ready(function () {
 
 //nav bar text color change on mouseenter/mouseleave
 
-$('.navbar a').mouseenter(function () {
+	$('#navbar a').mouseenter(function () {
 
-	$(this).css('color', '#03b73f');
-});
+		$(this).css('color', '#03b73f');
+	});
 
-$('.navbar a').mouseleave(function() {
+	$('#navbar a').mouseleave(function() {
 
-	$(this).css('color', 'white');
-	
-});
+		$(this).css('color', 'white');
+		
+	});
 
-//link button color change on mouseenter/mouseleave
+//lingo definitions reveal on mouseenter/mouseleave
 
-// $('.linkbutton').mouseenter(function () {
+	$('.lingo').mouseenter(function (){
+		$(this).css('border', '0');
+		$(this).find('h4').css('display', 'none');
+		$(this).find('p').css('display', 'block')
+				.css('background', '#03b73f')
+				.css('width', '100%')
+				.css('padding', '25px');
+		$(this).find('img').css('width', '20%')
+				.css('margin', '10px auto 0 auto')
+				.css('display', 'block');
+	})
 
-// 	$(this).css('background-color', 'white');
+	$('.lingo').mouseleave(function (){
+		$(this).css('border', '.5px solid white');
+		$(this).find('h4').css('display', 'block');
+		$(this).find('p').css('display', 'none')
+		$(this).find('img').css('width', '20%')
+				.css('margin', '10px auto 0 auto')
+				.css('display', 'none');
+	})
 
-// 	$(this).find('p').css('color', 'black');
-
-// });
-
-
-// $('.linkbutton').mouseleave(function () {
-
-// 	$(this).css('background-color', 'black');
-
-// 	$(this).find('p').css('color', 'white');
-
-// });
 
 //lessons blurb link color change on mouseenter/mouseleave
 
-$('.lessonsblurb a').mouseenter(function () {
+	$('.lessonsblurb a').mouseenter(function () {
 
-	$(this).css('color', '##03b73f');
+		$(this).css('color', '#03b73f');
 
-});
+	});
 
 
-$('.lessonsblurb a').mouseleave(function () {
+	$('.lessonsblurb a').mouseleave(function () {
 
-	$(this).css('color', 'black');
+		$(this).css('color', 'black');
 
-});
+	});
 
 // home page icons hover and focus state color change
 
 
-$(".iconbubble").mouseenter(function() { 
-            var src = $(this).attr("src").match(/[^\.]+/) + "_focus.svg";
-            $(this).attr("src", src);
-        })
-        .mouseleave(function() {
-            var src = $(this).attr("src").replace("_focus.svg", ".svg");
-            $(this).attr("src", src);
-        });
+	$(".iconbubble").mouseenter(function() { 
+	            var src = $(this).attr("src").match(/[^\.]+/) + "_focus.svg";
+	            $(this).attr("src", src);
+	        })
+	        .mouseleave(function() {
+	            var src = $(this).attr("src").replace("_focus.svg", ".svg");
+	            $(this).attr("src", src);
+	});
+
+
+
+//surf school images change from black-and-white version to color version
+//on mouseenter and mouseleave
+
+
+	$('.skool').mouseenter(function() {
+		var src = $(this).attr("src").match(/[^\.]+/) + "_color.jpg";
+	            $(this).attr("src", src);
+	        })
+	        .mouseleave(function() {
+	            var src = $(this).attr("src").replace("_color.jpg", ".jpg");
+	            $(this).attr("src", src);
+	});
 
 
 //surfboard graphic color change on mouseenter/mouseleave
 
-$(".board").hover(function(){
-    $(this).attr("src", function(index, attr){
-        return attr.replace(".png", "_active.png");
-    });
-}, function(){
-    $(this).attr("src", function(index, attr){
-        return attr.replace("_active.png", ".png");
-    });
-});
+	$(".board").hover(function(){
+	    $(this).attr("src", function(index, attr){
+	        return attr.replace(".png", "_active.png");
+	    });
+	}, function(){
+	    $(this).attr("src", function(index, attr){
+	        return attr.replace("_active.png", ".png");
+	    });
+	});
+
 
 
 // surfboard click function to display text for each type of surfboard
 
-$('#gun').click(function(){
 
-	if ($('#boardicons p').text)
+	$('.boardicon img').mouseesenter(function () {
+		$(this).find('p').css('display', 'block');
+	});
 
-	$('#boardicons p').append('This is the gun board.');
-});
-
-$('#sup').click(function(){
-	$('#boardicons p').append('This is the stand-up paddle board.');
-});
-
-$('#longboard').click(function(){
-	$('#boardicons p').append('This is the longboard.');
-});
-
-$('#funboard').click(function(){
-	$('#boardicons p').append('This is the funboard.');
-});
-
-$('#hybrid').click(function(){
-	$('#boardicons p').append('This is the hybrid board.');
-});
-
-$('#fish').click(function(){
-	$('#boardicons p').append('This is the fish board.');
-});
+	$('.boardicon img').mouseleave(function () {
+		$(this).find('p').css('display', 'none');
+	});
 
 
 
@@ -122,53 +125,70 @@ function findBoards (height, weight){
 
 //Google Maps API
 
-var map;
+	var map;
 
-function initMap() {
-	var uluru = {lat: 40.640162, lng: -73.785403};
-	var map = new google.maps.Map(document.getElementById('map'), {
-	zoom: 11,
-	center: uluru
-	});
-	var marker1 = new google.maps.Marker( {
-		position: {lat: 40.583634, lng: -73.814789},
-		map: map
-	});
+	function initMap() {
+		var uluru = {lat: 40.640162, lng: -73.785403};
+		var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 11,
+		center: uluru
+		});
+		var marker1 = new google.maps.Marker( {
+			position: {lat: 40.583634, lng: -73.814789},
+			map: map
+		});
 
-  marker1.addListener('click', function() {
-    // your custom code to add text to each beach marker
-    // $('#mydiv').text('some beach')
-  });
+	  marker1.addListener('click', function() {
+	    // your custom code to add text to each beach marker
+	    // $('#mydiv').text('some beach')
+	  });
 
 	var marker2 = new google.maps.Marker( {
-		position: {lat: 40.5909, lng: -73.7969},
-		map: map
-	});
+			position: {lat: 40.5909, lng: -73.7969},
+			map: map
+		});
 	var marker3 = new google.maps.Marker( {
-		position: {lat: 40.582857, lng: -73.652380},
-		map: map
-	});
+			position: {lat: 40.582857, lng: -73.652380},
+			map: map
+		});
 	var marker4 = new google.maps.Marker( {
-		position: {lat: 40.583659, lng: -73.666846},
-		map: map
-	});
-};
+			position: {lat: 40.583659, lng: -73.666846},
+			map: map
+		});
+	};
 
 
-initMap()
+	initMap()
+
 
 // beach thumbnails to bigger image
 
-$('.thumb').click(function () {
-   	var newSrc = $(this).attr('src');
-  $('#bigimage').attr('src', newSrc);
+	$('.thumb').click(function () {
+	   	var newSrc = $(this).attr('src');
+	  $('#bigimage').attr('src', newSrc);
 
-
-})
-
-function appendItem (item) {
-		$('#list').append('<li>' + item + '</li>');
-	}
-
+	})
 
 })
+
+
+// keeps track of window width for responsive navbar
+$(window).resize(function () {
+    var width = $(window).width()
+
+    if (width >='880px') {
+      $('#small-nav').hide ()
+
+		  console.log($(window).width())
+    }
+	})
+
+  $(window).scroll(function () {
+    var offset = $(window).scrollTop();
+    console.log(offset);
+     
+  })
+
+$('#burger').click(function () {
+  $('#small-nav').slideToggle();
+  })

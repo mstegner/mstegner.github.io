@@ -10,15 +10,23 @@
   	background: linear-gradient(to bottom right, #012266, #1280ed); /* Standard syntax */
 }
 
+body {
+	font-size: 16px;
+}
+
+p {
+	font-size: 1em;
+}
+
 p, h2, h3, a, ul {
 	font-family: 'Georgia', serif;
 }
 
 h1 {
 	font-family: 'Knewave', cursive;
-  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 	color: white;
-	font-size: 60px;
+	font-size: 3.75em;
 	letter-spacing: 0.15em;
 	line-height: 1;
 	text-align: center;
@@ -27,14 +35,23 @@ h1 {
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 3em;
 	font-weight: bold;
 	margin-left: 30px;
 }
 
+h3 {
+	color: white;
+	font-size: 40px;
+	line-height: 1;
+	text-align: center;
+	margin: 25px auto;
+	padding: 0;
+}
+
 .knewavewhite, .knewaveblack {
 	font-family: 'Knewave', cursive;
-	font-size: 30px;
+	font-size: 2.3em;
 	letter-spacing: .3em;
 	text-align: center;
 	padding: 40px 0 40px 0;
@@ -49,59 +66,60 @@ h2 {
 }
 
 .surfterms {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 50px;
 }
 
+
+.surficon {
+	width: 10%;
+	display: block;
+	text-align: center;
+	margin: 100px auto -70px auto;
+	padding: 0;
+}
+
+
 .lingo_row1, .lingo_row2, .lingo_row3 {
-	width: 75%;
+	width: 85%;
 	display: flex;
 	margin: 0 auto;
 	padding: 10px;
 }
 
-#lingo_kook, #lingo_grom, #lingo_hangten, #lingo_noah, #lingo_foamie, #lingo_barrel,
-#lingo_partywave, #lingo_lineup, #lingo_popup {
+.lingo {
 	width: 8%;
-	height: 100px;
-	margin: 0 auto;
-	padding: 10px 10px 30px 10px;
+	height: 150px;
+	margin: 20px;
 	text-align: center;
-	transition: all .2s ease-in-out;
 	flex: 1;
+	border: .5px solid white;
 }
 
-#word_kook, #word_grom, #word_hangten, #word_noah, #word_foamie,
-#word_barrel, #word_partywave, #word_lineup, #word_popup {
+.word {
 	font-family: 'Knewave', cursive;
-	font-size: 24px;
+	font-size: 1.6em;
 	letter-spacing: .1em;
 	color: white;
 	text-align: center;
 	flex: 1;
 	margin: 0 auto;
+	padding: 50px;
 }
 
-#def_kook, #def_grom, #def_hangten, #def_noah, #def_foamie, #def_barrel,
-#def_partywave, #def_lineup, #def_popup {
+.def {
 	font-family: 'Georgia', serif;
-	font-size: 13px
+	font-size: .8em;
+	line-height: 1.3;
 	letter-spacing: .005em;
 	color: white;
 	text-align: center;
 	display: none;
 	margin: 0 auto;
+	padding: 5px;
 }
 
-#lingo_kook:hover #def_kook {
-	display: block;
-}
-
-#lingo_kook:hover #word_kook {
-	color: #03b73f;
-	transform: scale(1.1);
-}
 
 body {
 	width: 100%;
@@ -111,39 +129,43 @@ body {
 
 header {
 	background-color: black;
-	padding: 0;
+	padding: 10px;
 	width: 100%;
 	margin: 0;
 	overflow: hidden;
-
+	position: fixed;
+	top: 0;
+	border-bottom: 2px solid #03b73f;
 }
 
-.logo {
+header a {
+	display: inline-block;
+}
+
+header img {
 	float: left;
-	margin-left: 25px;
-	padding: 20px;
+	width: 130px;
 }
 
-.navbar{
+.container {
+	width: 95%;
+	margin: 0 auto;	
+}
+
+#navbar{
 	float: right;
-	max-width: 1000px;
-	min-width: 500px;
-	padding-top: 30px;
+	padding-top: 10px;
 }
 
-.navbar li {
-	display: inline;
-	text-decoration: none;
-}
-
-.navbar a {
-	font-size: 18px;
+#navbar a {
+	font-size: 1.2em;
 	color: white;
-	padding-right: 30px;
+	margin-left: 40px;
 	text-decoration: none;
 	font-family: 'Open Sans Condensed', sans-serif;
 	letter-spacing: .1em;
 	font-weight: 700;
+	display: inline-block;
 }
 
 .clear {clear: both;}
@@ -154,8 +176,8 @@ header {
 	height: 100vh;
 	margin: 0;
 	padding: 200px 0 10px 0;
-	overflow: hidden;
-	border-bottom: 5px black solid;
+	overflow: none;
+	border-bottom: 2px solid #03b73f;
 }
 
 #heroindex {
@@ -163,11 +185,11 @@ header {
 }
 
 #herobeaches {
-	background: url("../images/duotone/hero_beach_duotone.jpg");
+	background: url("../images/duotone/hero_lessons2_duotone.jpg");
 }
 
 #herogear {
-	background: url("../images/duotone/hero_gear2_duotone.jpg");
+	background: url("../images/duotone/hero_gear3_duotone.jpg");
 }
 
 #herolessons {
@@ -175,12 +197,12 @@ header {
 }
 
 #herowetsuits {
-	background: url("../images/duotone/hero_wetsuits_duotone.jpg");
+	background: url("../images/duotone/hero_wetsuits2_duotone.jpg");
 	width: 100%;
-	height: 50vh;
-	overflow: hidden;
+	height: 80vh;
+	overflow: none;
 	margin: 0;
-	padding: 200px 0 10px 0;
+	padding: 100px;
 }
 
 #heroinspiration {
@@ -189,7 +211,7 @@ header {
 
 .pagetitle {
 	width: 60%;
-	margin: 0 auto;
+	margin: 200px auto;
 	padding: 100px;
 	border: 2px solid white;
 }
@@ -201,7 +223,7 @@ header {
 }
 
 .musicplayer p {
-	font-size: 20px;
+	font-size: 1.1em;
 	font-family: 'Open Sans Condensed', sans-serif;
 	letter-spacing: .1em;
 	font-weight: 700;
@@ -212,30 +234,26 @@ header {
 	padding: 100px;
 }
 
-.maintextbox {
+/*.maintextbox {
 	width: 60%;
 	margin: 0 auto;
-}
+}*/
 
 .main p {
-	font-size: 23px;
-	line-height: 1.5;
+	font-size: 1.4em;
+	line-height: 1.6;
 	margin: 0 auto;
-	text-align: left;
+	text-align: center;
 	color: white;
 	width: 60%;
 	letter-spacing: .03em;
 }
 
-.maintextbox p ul li {
-	font-size: 21px;
-	line-height: 1.6;
-	margin: 0 auto;
-	text-align: left;
-	color: black;
-	width: 60%;
+.main img {
+	width: 15%;
+	text-align: center;
+	padding-bottom: 10px;
 }
-
 
 .movie {
 	margin: 0 auto;
@@ -251,24 +269,28 @@ header {
 }
 
 .iconbox{
-	width: 12%;
+	width: 20%;
 	margin: 0 auto;
 	padding: 0;
 }
 
 .iconbox p, a {
 	text-align: center;
-	font-size: 16px;
+	font-size: 1.2em;
 	font-family: 'Knewave', sans-serif;
 	letter-spacing: .1em;
 	color: white;
-	margin-top: 10px;
+	margin-top: 0;
 	padding: 0;
 	text-decoration: none;
 }
 
+.iconbox p:hover {
+	color: #03b73f;
+}
+
 .iconbubble {
-	margin: 0 auto 20px auto;
+	margin: 0 auto 10px auto;
 }
 
 #map {
@@ -278,59 +300,24 @@ header {
 	padding: 0;
 }
 
+
+#mydiv p {
+	font-size: 1em;
+	font-family: 'Georgia', serif;
+	text-align: left;
+}
+
+
 #boardicons {
 	display: inline-block;
 	float: right;
 }
 
-.boardblurb {
-	font-family: 'Georgia', serif;
-	font-size: 18px;
-	text-align: left;
-	width: 50%
-	padding: 10px;
-	margin: 0 auto;
-}
-
-.blackbullet {
-	background: black;
-	color: white;
-	font-size: 20px;
-	text-align: center;
-	padding: 10px;
-	margin: 30px auto;
-	width: 400px;
-	border-radius: 30px;
-
-}
-
-.greybox {
-	background: linear-gradient(to top right, #012266, #1280ed);
-	justify-content: center;
-	padding: 10px 10px 100px 10px;
-}
-
-.greybox2 {
+.bluebox {
 	background: linear-gradient(to top right, #012266, #1280ed);
 	text-align: center;
 	align-items: center;
 	padding: 60px;
-}
-
-
-#thumbnails{
-	margin: 0 auto;
-	padding: 20px;
-	width: 65%;
-	display: flex;
-}
-
-.thumb {
-	margin: 2%;
-	width: 15%;
-	height: 15%;
-	flex: 1;
-	cursor: pointer;
 }
 
 .boardform {
@@ -344,7 +331,6 @@ header {
 .form {
 	margin: 0 auto;
 	text-align: center;
-
 }
 
 .suits {
@@ -376,136 +362,154 @@ header {
 }
 
 .wetsuitblurb {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Knewave', serif;
 	letter-spacing: .05em;
 	font-weight: 700;
-	color: black;
-	font-size: 18px;
+	color: white;
+	font-size: 1em;
 	text-align: left;
+}
+
+#thumbnails{
+	margin: 0 auto;
+	padding: 20px;
+	width: 65%;
+	display: flex;
+}
+
+.thumb {
+	margin: 2%;
+	width: 10%;
+	height: 10%;
+	flex: 1;
+	opacity: 65%;
+	cursor: pointer;
 }
 
 .beachdetail {
 	display: flex;
-	margin: 30px auto;
-	width: 100%
-	padding: 0 100px 0 100px;
+	margin: 50px auto;
+	width: 100%;
+	padding: 0 100px 100px 100px;
 }
 
-.beachcard {
+.beachdetail p {
 	height: 200px;
 	margin: 20px;
-	flex: 1;
-	overflow: auto; 
+	font-size: 1.2em;
+	line-height: 1.6;
+	letter-spacing: 0.05em;
+	color: white;
+	font-family: 'Georgia', serif;
 }
 
-#bigimage {
-	height: 30%vh;
-	padding: 0 30px 0 30px;
-}
-
-.lessoncard {
-	background: white;
-	box-shadow: 2px 2px 12px 0px 
-	rgba(122, 122, 122, 0.5);
-	overflow: auto;
-	margin: 30px;
-	flex: 1;
-}
-
-
-.lessonsblurb {
-	margin: 20px;
-}
-
-.lessonsblurb p {
-	font-size: 15px;
+.beachdetail h4, a {
+	font-family: "Knewave", cursive;
+	font-size: 1.2em;
+	letter-spacing: 0.06em;
 	line-height: 1.5;
-}
-
-.lessoncard h2, a {
-	font-family:'Open Sans Condensed', sans-serif;
-	font-weight: 700;
-	font-size: 18px;
 	text-align: left;
-	margin: 0;
-}
-
-p.beachcard {
-	font-size: 20px;
-	line-height: 1.5;
-	padding: 0 20px 20px 20px;
 	color: white;
 
 }
 
-.beachcard h2, a {
-	font-family:'Open Sans Condensed', sans-serif;
-	font-weight: 700;
-	font-size: 18px;
-	text-align: left;
-/*	padding: 10px 20px 0 20px; */
-	margin: 0;
-}
-
-.maintextbox ul, li {
-	font-size: 20px;
-	line-height: 1.50;
-	color: black;
-	text-align: left;
-	text-decoration: none;
+#bigimage {
+	width: 60%;
+	height: 60%;
+	padding: 0 30px 0 30px;
 }
 
 .beachconditions {
 	width: 100%;
 	margin: 50px auto;
-
+	display: flex;
+	background: white;
 }
 
 .beachconditions h3 {
 	font-family: 'Georgia', serif;
-	font-size: 30px;
+	font-size: 1.3em;
 	text-align: center;
-	margin: 200px auto 100px auto;
+	margin: 10px auto;
+	padding: 0 30px;
+	line-height: 1.6;
+	color: grey;
+	letter-spacing: .02em;
+}
+
+.whitebox {
+	width: 100%;
+	background: white;
+}
+
+.whitebox img {
+	width: 8%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0 0 0;
+	display: block;
+}
+
+.conditions {
 	width: 50%;
-	line-height: 1.5;
-	color: white;
-
-}
-
-.linkbutton {
-	margin: 50px auto;
 	padding: 10px;
-	background: black;
-    width: 15%;
-    border: 0;
-    transition: all 0.3s ease 0s;
-
 }
 
-.linkbutton p {
+.knewaveblack2 {
+	font-family: 'Knewave', cursive;
+	font-size: 1.8em;
+	letter-spacing: .3em;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	color: black;
+}
+
+.knewavewhite2 {
+	font-family: 'Knewave', cursive;
+	font-size: 1.8em;
+	letter-spacing: .3em;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	color: white;
+}
+
+.beachbutton {
+	width: 30%;
+	background: black;
+	margin: 30px auto;
+	padding: 10px;
+	text-align: center;
+	transition: all 0.2s ease 0s;
+}
+
+.beachbutton:hover {
+	 background: #03b73f;
+}
+
+.whitebutton {
+	width: 20%;
+	background: white;
+	margin: 40px auto;
+	padding: 5px;
+    transition: all 0.2s ease 0s;
+}
+
+.whitebutton:hover {
+	 background: #03b73f;
+}
+
+.beachbutton a {
 	text-align: center;
 	font-family:'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	font-size: 1.1em;
 	color: white;
+	margin: 0 auto;
+	padding: 10px 0;
+	display: block;
 }
 
-.linkbutton:hover {
-	 background: #03b73f;
-}
-
-
-.linkbutton2 {
-	margin: 50px auto;
-	padding: 10px;
-	background: white;
-    width: 15%;
-    border: 0;
-    transition: all 0.3s ease 0s;
-
-}
-
-.linkbutton2 p {
+.whitebutton p {
 	text-align: center;
 	font-family:'Open Sans Condensed', sans-serif;
 	font-weight: 700;
@@ -513,48 +517,103 @@ p.beachcard {
 	color: black;
 }
 
-.linkbutton2:hover {
-	 background: #03b73f;
+.schools {
+	width: 100%;
+	display: flex;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+.school {
+	flex: 1;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.school a, h3 {
+	font-family: 'Knewave', serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	letter-spacing: 0.06em;
+	color: white;
+	text-align: left;
+	margin: 0;
+}
+
+.school h3:hover {
+	color: #03b73f;
+}
+
+.school p {
+	font-family: 'Georgia', serif;
+	font-size: 1em;
+	line-height: 1.7em;
+	color: white;
+	text-align: left;
+	margin: 0;
+	padding-top: 10px;
+	width: 85%;
+}
+
+.school img {
+	width: 60%;
+	border-radius: 50%
+}
+
+.photogallery {
+	width: 90%;
+	margin: 30px auto;
+	padding-bottom: 100px;
+	display: flex;
+}
+
+.photogallery img {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	display: block;
+	padding: 10px;
+	border-radius: 50%;
 }
 
 .surfboards {
-	margin: 10% auto;
-/*	border: 7px black solid;*/
-	padding: 50px;
-	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
 }
 
-.surfboards h1, .blackbox h1 {
+.surfboards h2, .blackbox h2 {
+	font-family: 'Knewave', cursive;
 	text-shadow: none;
-	font-size: 45px;
-	letter-spacing: 0.2em;
+	font-size: 1.8em;
+	letter-spacing: 0.3em;
 	line-height: 1.5;
 	text-align: center;
-	margin: 30px auto;
+	margin: 20px auto 60px auto;
 	padding: 0;
-	overflow: hidden;
+	color: white;
 }
 
 .blackbox {
 	background: black;
 	text-align: center;
-	align-items: center;
-	padding: 60px;
+	padding: 100px 0 100px 0;
+	width: 100%;
 }
 
-.surfboards h3 {
-	font-size: 20px;
+.surfboards {
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.surfboards h4 {
+	font-size: .9em;
+	letter-spacing: 0.05em;
 	text-align: center;
 	font-family: 'Georgia', serif;
-	margin: 10px auto;
+	margin: 0 auto 75px auto;
+	padding: 0;
 	color: white;
-
-}
-
-.surfboards p {
-	text-align: center;
-	margin: 0 auto;
-	padding: 30px 0 70px 0;
 }
 
 .clear {
@@ -565,20 +624,32 @@ p.beachcard {
 	margin: 0 auto;
 	padding: 0;
 	align-items: center;
+	display: flex;
+	width: 100%;
 }
 
-#boardicons p {
-	font-size: 1.2em;
+.boardicon {
+	margin: 0 auto;
+	padding-bottom: 300px;
+}
+
+.board img {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.boardicon p {
+	font-size: 0.9em;
+	line-height: 1.6;
+	letter-spacing: 0.004em;
 	color: white;
 	font-family: 'Georgia', serif;
-	margin: 20px auto;
+	margin: 0 auto;
+	padding: 15px;
+	display: inline-block;
 }
-
-
-.board {
-	width: 13%;
-}
-
 
 .imagegallery {
 	width: 75%
@@ -592,41 +663,9 @@ p.beachcard {
 	padding: 0;
 }
 
-h3 {
-	color: white;
-	font-size: 40px;
-	line-height: 1;
-	text-align: center;
-	margin: 25px auto;
-	padding: 0;
-}
-
-#columnlist {
-	column-count: 1;
-	margin: 100px 50px 150px 50px;
-}
-
-#columnlist ul {
-	list-style-type: none;
-	font-size: 18px;
-	line-height: 1.5;
-	color: rgb(74, 74, 74);
-}
-
-#video {
-	text-align: center;
-}
-
 #video {
 	text-align: center;
 	margin: 100px auto 100px auto;
-}
-
-.caption {
-	font-family: 'Georgia', serif;
-	font-size: 16px;
-	color: white;
-	margin: 20px 0 0 30px;
 }
 
 #movies {
@@ -638,7 +677,8 @@ h3 {
 
 #movies p {
 	text-align: center;
-	margin: 0 auto;
+	font-size: 1.2em;
+	margin: -40px auto 20px auto;
 	padding-bottom: 30px;
 	color: white;
 }
@@ -646,6 +686,7 @@ h3 {
 #instagallery {
 	margin: 0 auto;
 	width: 100%;
+	padding-bottom: 100px;
 }
 
 .instabox img:hover {
@@ -673,6 +714,17 @@ h3 {
 	padding: 0;
 }
 
+#endless {
+	font-family: 'Georgia', serif;
+	font-size: 1.4em;
+	line-height: 1.8;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: white;
+	margin: 10px auto 30px auto;
+	width: 45%;
+}
+
 .moviebox img {
 	height: 300px;
 	margin: 0 30px 30px 30px;
@@ -680,6 +732,22 @@ h3 {
 
 .moviebox { transition: all .2s ease-in-out; }
 .moviebox:hover { transform: scale(1.1); }
+
+
+#videocontainer {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+#videocontainer img {
+	width: 10%;
+	text-align: center;
+	padding-bottom: 0;
+	display: block;
+	margin: 100px auto 0 auto;
+}
 
 footer {
 	background-color: black;
@@ -707,3 +775,99 @@ footer p {
 	padding: 20px;
 	margin: 20px;
 }
+
+#small-nav, #small-nav a {
+	display: none;
+}
+
+#burger {
+	display: none;
+	float: right;
+	margin-top: 5px;
+}
+
+
+/*media queries*/
+@media (max-width: 800px) {
+	#navbar {
+		display: none;
+	}
+
+	#burger {
+		display: block;
+	}
+		#small-nav {
+		position: absolute;
+		width: 100%;
+	}
+
+	#small-nav a {
+		display: block;
+		text-decoration: none;
+		background: black;
+		color: white;
+		padding: 15px;
+}
+	#small-nav a:hover {
+		background: #03b73f;
+	}
+
+	#burger img {
+		width: 30px;
+	}
+
+	body {
+		font-size: 10px;
+	}
+
+	.pagetitle {
+		width: 90%
+		margin: 50px auto;
+		padding: 50px;
+		border: 2px solid white;
+	}
+
+	.main {
+		padding: 50px;
+	}
+
+	.main p {
+		width: 90%;
+		font-size: 1.5em;
+	}
+
+	.surficon {
+		width: 30%;
+		display: block;
+		text-align: center;
+		margin: 50px auto -50px auto;
+		padding: 0;
+	}
+
+	.surfterms {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.lingo_row1, .lingo_row2, .lingo_row3 {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+}
+
+	.lingo {
+		width: 100%;
+		margin-bottom: 50px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-bottom: 40px;
+		text-align: center;
+		border: .5px solid white;
+
+
+
+
+} /*end of media queries
+

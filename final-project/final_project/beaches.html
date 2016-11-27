@@ -14,20 +14,19 @@
 	<div id="page">
 	<header>
 		<div class="logo"><a href="index.html">
-		<img src="images/logo_black_400_400_horiz.jpg" alt="I Surf New York" height=60px></a></div>
+		<img src="images/logo_black_400_400_horiz.jpg" alt="I Surf New York"></a></div>
     	
     	<nav class="navbar">
      		<ul>
           <li><a href="index.html">HOME</a></li>
       		<li><a href="beaches.html">BEACHES</a></li>
-    		<li><a href="lessons.html">LESSONS</a></li>
        		<li><a href="gear.html">GEAR</a></li>
        		<li><a href="inspiration.html">INSPIRATION</a></li>
       		</ul>  
     	</nav>
 
      	<div class="clear"></div>
-	</header>
+	</header>  <!end of header>
 
   <div id="herobeaches">
 
@@ -37,7 +36,8 @@
   </div>
 
   <div class="main">
-  	<p>There are a few good places to surf, some of which you can get to by subway or commuter train. The map below shows a few popular beaches that are easy to get to by subway or car, and have lots of amenities nearby.</p>
+    <p><img src="images/icon_beach_white.svg"></p>
+  	<p>There are a few good places to surf, some of which you can get to by subway or commuter train. Check out the map below for the surfing beaches closest to the city</p>
   </div>
 
   <!music div>
@@ -46,72 +46,135 @@
         <audio controls>
           <source src="audio/dointime.m4a" type="audio/mp4">
         </audio>
-      </div>
-
-   <!end of music div> 
-
-    <div id="map"></div>  <!Google Map>
+    </div>   <!end of music div> 
 
 
-    <!beach details div>
+    <div id="map"></div>  
+      <div id="mydiv"><p></p></div>
 
-    <div class="greybox">
+    <!Google Map>
 
 
       <div id="thumbnails">
-        <img class="thumb" id="first" src="images/beach_rock1.jpg">
 
-        <img class="thumb" id="second" src="images/beach_rock2.jpg">
+          <img class="thumb" id="first" src="images/beach_rock1.jpg">
 
-        <img class="thumb" id="third" src="images/beach_longbeach1.jpg">
+          <img class="thumb" id="second" src="images/beach_rock2.jpg">
 
-        <img class="thumb" id="fourth" src="images/beach_longbeach2.jpg">
+          <img class="thumb" id="third" src="images/beach_longbeach1.jpg">
+
+          <img class="thumb" id="fourth" src="images/beach_longbeach2.jpg">
       </div>
 
           <div class="clear"></div>
 
+
       <div class="beachdetail">
+
         <img id="bigimage" src="images/beach_rock1.jpg">
-        <p class="beachcard"><b>Beach 92nd Street, Rockaway: </b>Rockaway's main surfing beach is just blocks from the A train and perhaps New York's most crowded breaks. It's also one of the more dangerous and challenging waves-steep, fast, and often unpredictable. The congestion can make the natives (or those claiming to be natives) testy.</p>
-      </div>
-    </div>
+          
+          <div id="first"><h4>Beach 92nd Street, Rockaway</h4>
+          <p>Rockaway's main surfing beach is just blocks from the A train and perhaps New York's most crowded breaks. It's also one of the more dangerous and challenging waves-steep, fast, and often unpredictable. The congestion can make the natives (or those claiming to be natives) testy.</p></div>
 
-<!--         <h2>BEACH 67TH STREET, ROCKAWAY</h2>
-        <p>Rock’s other surfing beach is every bit as steep and erratic as the break at 92nd Street, though not nearly as crowded or hostile, making it a better spot for learning. Novice surfers should stay aware of the wooden pilings protruding from the shoreline before catching a wave.</p>
+          <div id="second"><h4>Beach 67th Street, Rockaway</h4>
+          <p>Rock’s other surfing beach is every bit as steep and erratic as the break at 92nd Street, though not nearly as crowded or hostile, making it a better spot for learning. Novice surfers should stay aware of the wooden pilings protruding from the shoreline before catching a wave.</p></div>
 
-        <h2>LINCOLN BOULEVARD, LONG BEACH</h2>
-        <p>Mellow and incredibly predictable, the break is excellent for beginners (and located just a few blocks from the LIRR station and Unsound surf shop, where you can rent a board). Best spot for a post-surf nosh: the Beach House on West Beech Street.</p> -->
+          <div id="third"><h4>Lincoln Boulevard, Long Beach</h4>
+          <p>Mellow and incredibly predictable, the break is excellent for beginners (and located just a few blocks from the LIRR station and Unsound surf shop, where you can rent a board). Best spot for a post-surf nosh: the Beach House on West Beech Street.</p></div>
 
-       <!--  <h2>NATIONAL BOULEVARD, LONG BEACH</h2>
-        <p>The consistent, user-friendly wave was one of the best-kept secrets of the Long Beach surf scene for years. Then came the posh Allegria Hotel, a National Boulevard surf cam (nysea.com), and the ongoing ASP World Tour event, all of which means its low-flying days are done.</p> -->
+          <div id="fourth"><h4>National Boulevard, Long Beach</h4>
+          <p>The consistent, user-friendly wave was one of the best-kept secrets of the Long Beach surf scene for years. Then came the posh Allegria Hotel, a National Boulevard surf cam (nysea.com), and the ongoing ASP World Tour event, all of which means its low-flying days are done.</p></div>
+
+      </div>  <!end of beachdetail div>
 
 
-    </div>    <!end of grey box div>
+      <div class='whitebox'>  <!white box div>
 
+            <img src="images/icon_conditions_black.svg">
+            
+            <h2 class="knewaveblack2">Beach conditions</h2>
 
-    <div class='beachconditions'>
+        <div class='beachconditions'>
 
-      <h3>Before you head out to a beach for surfing, you'll want to check the surf report to find out wave height, swell direction, tide schedule, and wind speeds. Here is an excellent guide to understanding how to read a surf report:</h3>
+          <div class="conditions">
+            <h3>Before you head out to a beach for surfing, check the surf report to find out wave height, swell direction, tide schedule, and wind speeds. Here is an excellent guide to understanding how to read surf reports:
+            </h3>
 
-          <div class="linkbutton">
-            <a href=http://learntosurfkona.com/featured/how-to-read-a-surf-report target="_blank"><p>SURF REPORT</p></a>
+          <div class="beachbutton">
+            <a href=http://learntosurfkona.com/featured/how-to-read-a-surf-report target="_blank">SURF REPORT</a>
           </div>
-
-
-      <h3>Look up current beach conditions here:</h3>
-
-        <div class="linkbutton">
-            <a href="http://www.surfline.com/surf-forecasts/long-island/nassau---queens-county_131699/" target="_blank"><p>SURFLINE</p></a>
-
         </div>
 
-      <div class="linkbutton">
-          <a href="http://magicseaweed.com/Rockaway-Surf-Report/384/" target="_blank"><p>MAGIC SEAWEED</p></a>
+        <div class="conditions">
+          <h3>Look up current beach conditions here:</h3>
 
-      </div>
+          <div class="beachbutton">
+            <a href="http://www.surfline.com/surf-forecasts/long-island/nassau---queens-county_131699/" target="_blank">SURFLINE</a>
+          </div>
+
+          <div class="beachbutton">
+            <a href="http://magicseaweed.com/Rockaway-Surf-Report/384/" target="_blank">MAGIC SEAWEED</a>
+          </div>
+
+         </div> 
+
+      </div>  <!end of beach conditions div> 
+
+      </div>  <!end of whitebox div>
 
 
-    </div> <!end of beach conditions div>
+    <div class="main">  <!main div on lessons>
+
+      <h2 class="knewavewhite">Surf lessons</h2>
+  
+        <p>If you are new to surfing, definitely consider taking a couple of lessons before setting out to catch your own waves. There are several surfing schools throughout New York and Long Island, some of which teach lessons year-round. The schools provide you with a wetsuit, surfboard and leash, plus many good tips to help you get the hang of it.</p><br><br>
+
+      <p>Check out these surf schools when you're ready for a lesson:</p>
+
+        <div class="schools">
+
+          <div class="school">  <!school 1>
+
+              <a href="http://www.localssurfschool.com/" target="_blank">
+              <img class='skool' src="images/lessons_locals2.jpg">
+
+              <h3>LOCALS SURF SCHOOL
+              <br>localssurfschool.com</h3></a>
+
+              <p>Locals Surf School was founded in 2011 by Mike Reinhardt and Mike Kololyan, two life-long surfer/skaters and locals of Rockaway Beach, NYC. They offer private and group surf and skate lessons, camps for kids, charity programs and contests.</p>
+
+          </div>  <!end of school 1 div>
+
+
+          <div class="school">  <!school 2>
+
+              <a href="https://skudinsurf.com/" target="_blank">
+              <img class='skool' src="images/lessons_skudin.jpg" width=100%>
+
+              <h3>SKUDIN SURF SCHOOL
+              <br>skudinsurf.com</h3></a>
+
+              <p>A family-run surf school that offers group and private surf lessons for kids and adults, plus summer camps and contests. Lessons offered in Long Beach, Rockaway and Rincon, Puerto Rico.</p>
+
+          </div>  <!end of school 2 div>
+
+
+          <div class="school">  <!school 3>
+
+              <a href="http://surflessonsnewyork101.com/" target="_blank">
+              <img class='skool' src="images/lessons_nysurfschool.jpg" width=100%>
+
+              <h3>NEW YORK SURF SCHOOL
+              <br>surflessonsnewyork101.com</h3></a>
+
+              <p>Based at Beach 69th Street in Rockaway, certified instructor Frank Cullen and his crew offer group and private lessons to kids and adults, plus summer camps.</p>
+
+          </div>  <!end of school 3 div>
+
+        </div>  <!end of schools div>
+
+    </div>  <!end of main lessons div>
+
 
 
       <footer>
@@ -123,6 +186,7 @@
           <a href="https://www.linkedin.com/in/maria-stegner-2333b14" target='_blank'><img src="images/footer_linkedin.png"></a>
           <a href="https://medium.com/@maria.stegner" target='_blank'><img src="images/footer_medium.png"></a>
           </p>
+
       </footer>
   
 

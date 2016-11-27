@@ -6,28 +6,39 @@
 	<link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Chewy|Knewave|Mrs+Sheppards" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 	<div id="page">
 
 	<header>
-		<div class="logo"><a href="index.html">
-		<img src="images/logo_black_400_400_horiz.jpg" alt="I Surf New York" height=60px></a></div>
+    <div class="container">
+		  <a href="index.html">
+		  <img src="images/logo_black_400_400_horiz.jpg" alt="I Surf New York"></a>
     	
-    	<nav class="navbar">
-     		<ul>
-     		<li><a href="index.html">HOME</a></li>
-      		<li><a href="beaches.html">BEACHES</a></li>
-    		  <li><a href="lessons.html">LESSONS</a></li>
-       		<li><a href="gear.html">GEAR</a></li>
-       		<li><a href="inspiration.html">INSPIRATION</a></li>
-      		</ul>  
+    	<nav id="navbar">
+     		 <a href="index.html">HOME</a>
+      	 <a href="beaches.html">BEACHES</a>
+       	  <a href="gear.html">GEAR</a>
+       	  <a href="inspiration.html">INSPIRATION</a> 
     	</nav>
+      <div id="burger">
+        <img src="images/hamburger-icon.png" alt=""></div>
+      <div class="clear"></div>
+    </div>
+	
+  </header>  <!end of header>
 
-     	<div class="clear"></div>
-	</header>
+
+     <!small nav bar>
+    <div id="small-nav">
+        <a href="index.html">Home</a>
+        <a href="beaches.html">Beaches</a>
+        <a href="gear.html">Gear</a>
+        <a href="inspiration.html">Inspiration</a>
+    </div>  <!end of small nav>
+
 
   <div id="heroindex">
   		<div class="pagetitle">
@@ -36,7 +47,7 @@
   </div>
 
   <div class="main">
-  	<p>Hi there. Thanks for visiting! Do you surf? Would you like to know more about surfing in New York? I put this site together as a guide for anyone who would like to pick up surfing, but also as a fun web dev project to practice new skills.
+  	<p>Hi there. Thanks for visiting! I put this site together as a guide for anyone in the New York area who would like to pick up surfing, but also as a fun web dev project to practice my new coding skills 😀.
     <br><br>
     I have included some videos and songs you can listen to while navigating my site, for a more immersive experience. Oh, there's also some info on New York's best surfing beaches and surf schools, and some inspiration to get you excited to ride some waves!</p>
 
@@ -66,44 +77,46 @@
 
     <div class="surfterms">
 
-      <h2 class="knewavewhite">essential surf lingo you should know</h2>
-      <hr>
+      <img class="surficon" src="images/icon_surf_van.svg">
 
+      <h2 class="knewavewhite">essential surf lingo
+      </h2>
 
-    <div class="lingo_row1"> <!row 1>
+      <div class="lingo_row1"> <!row 1>
 
-      <div id="lingo_kook">
-        <h4 id="word_kook">kook</h4>
-        <p id="def_kook">A beginner or someone who is not very good at surfing</p>
+      <div class="lingo">
+        <h4 class="word">kook</h4>
+          <p class="def">A beginner or someone who is not very good at surfing<img src="images/lingo_kook.svg"></p>
       </div>
       
-      <div id="lingo_grom">
-        <h4 id="word_grom">grom</h4>
-        <p id="def_grom">A young or inexperienced surfer... Usually a child who's learning to surf.</p>
+      <div class="lingo">
+        <h4 class="word">grom</h4>
+        <p class="def">A young or inexperienced surfer. Usually a child who's learning to surf.<img src="images/lingo_grom.svg"></p>
       </div>
       
-      <div id="lingo_hangten">
-        <h4 id="word_hangten">hang ten</h4>
-        <p id="def_hangten">When you're riding a longboard with both feet on the nose of the board.</p>
+      <div class="lingo">
+        <h4 class="word">hang ten</h4>
+        <p class="def">Riding a longboard with both feet on the nose of the board.<img src="images/lingo_hangten.svg"></p>
       </div>
 
     </div>   <!end of row 1>
 
+
     <div class="lingo_row2"> <!row 2>
 
-      <div id="lingo_noah">
-        <h4 id="word_noah">Noah</h4>
-        <p id="def_noah">A shark!</p>
+      <div class="lingo">
+        <h4 class="word">Noah</h4>
+        <p class="def">A shark!<img src="images/lingo_noah.svg"></p>
       </div>
       
-      <div id="lingo_foamie">
-        <h4 id="word_foamie">foamie</h4>
-        <p id="def_foamie">A longboard made of foam. Great surfboard type for a beginner.</p>
+      <div class="lingo">
+        <h4 class="word">foamie</h4>
+        <p class="def">A longboard made of foam. Great surfboard type for beginners.<img src="images/lingo_foamie.svg"></p>
       </div>
       
-      <div id="lingo_barrel">
-        <h4 id="word_barrel">barrel</h4>
-        <p id="def_barrel">Where the wave is hollow while it's breaking. Also called a tube.</p>
+      <div class="lingo">
+        <h4 class="word">barrel</h4>
+        <p class="def">Where the wave is hollow while it's breaking. Also called a tube.<img src="images/lingo_barrel.svg"></p>
       </div>
 
     </div>  <!end of row 2>
@@ -111,23 +124,24 @@
 
     <div class="lingo_row3"> <!row 3>
 
-      <div id="lingo_partywave">
-        <h4 id="word_partywave">party wave</h4>
-        <p id="def_partywave">A wave surfed by several people at once.</p>
+      <div class="lingo">
+        <h4 class="word">party wave</h4>
+        <p class="def">A wave surfed by several people at once.
+        <img src="images/lingo_partywave.svg"></p>
       </div>
       
-      <div id="lingo_lineup">
-        <h4 id="word_lineup">line up</h4>
-        <p id="def_lineup">The place just outside the breaking waves where surfers wait for their waves.</p>
+      <div class="lingo">
+        <h4 class="word">line up</h4>
+        <p class="def">The place just outside breaking waves where surfers wait for their turn.<img src="images/lingo_lineup.svg"></p>
       </div>
       
-      <div id="lingo_popup">
-        <h4 id="word_popup">pop up</h4>
-        <p id="def_popup">Describes the move a surfer makes to go from lying on the surfboard to standing in position to ride a wave.</p>
+      <div class="lingo">
+        <h4 class="word">pop up</h4>
+        <p class="def">Going from lying on the surfboard to standing in position to ride a wave.
+        <img src="images/lingo_popup.svg"></p>
       </div>
 
     </div>  <!end of row 3>
-    <hr>
   </div>   <!end of surf terms>
 
 
@@ -140,12 +154,6 @@
           <a href="beaches.html">
           <img class="iconbubble" src="images/icon_beach.svg">
           <p>BEACHES</p></a>
-        </div>
-
-        <div class="iconbox">
-          <a href="lessons.html">
-          <img class="iconbubble" src="images/icon_lessons.svg">
-          <p>LESSONS</p></a>
         </div>
 
         <div class="iconbox">
@@ -178,7 +186,13 @@
   </div>  <!end of div page>
 
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <!my own js file> 
     <script src="js/surf.js"></script>
+
+    <!scroll reveal effect>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+
 
   </body>
 </html>
