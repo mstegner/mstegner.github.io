@@ -3,29 +3,44 @@
 <head>
 	<title>Gear</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Chewy|Knewave|Mrs+Sheppards" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
 	<div id="page">
-	<header>
-		<div class="logo"><a href="index.html">
-		<img src="images/logo_black_400_400_horiz.jpg" alt="I Surf New York"></a></div>
-    	
-    	<nav class="navbar">
-     		<ul>
-          <li><a href="index.html">HOME</a></li>
-      		<li><a href="beaches.html">BEACHES</a></li>
-       		<li><a href="gear.html">GEAR</a></li>
-       		<li><a href="inspiration.html">INSPIRATION</a></li>
-      		</ul>  
-    	</nav>
 
-     	<div class="clear"></div>
-	</header>
+	<header>
+    <div class="container">
+      <a href="index.html">
+      <img src="images/logo_black_400_400_horiz.jpg" alt="I Surf New York"></a>
+      
+      <nav id="navbar">
+         <a href="index.html">HOME</a>
+         <a href="beaches.html">BEACHES</a>
+          <a href="gear.html">GEAR</a>
+          <a href="inspiration.html">INSPIRATION</a> 
+      </nav>
+      <div id="burger">
+        <img src="images/hamburger-icon.png" alt=""></div>
+      <div class="clear"></div>
+    </div>
+  
+  </header>  <!end of header>
+
+
+     <!small nav bar>
+    <div id="small-nav">
+        <a href="index.html">Home</a>
+        <a href="beaches.html">Beaches</a>
+        <a href="gear.html">Gear</a>
+        <a href="inspiration.html">Inspiration</a>
+    </div>  <!end of small nav>
+
 
   <div id="herogear">
 
@@ -34,10 +49,29 @@
   		</div>
   </div>
 
+  <!music div>
+    <div class="musicplayer"><br><br>
+      <p>PLAY MUSIC?</p>
+        <audio controls>
+          <source src="audio/would.m4a" type="audio/mp4">
+        </audio>
+    </div>   <!end of music div> 
+
     <div class="main">
     <p><img src="images/icon_gear_white.svg"></p>
-        <p>All you need is a surfboard, wetsuit, leash, and some wax. In colder months, you will need booties, gloves and a hood to keep you from freezing. There are several good surf shops around the city and Long Island that will sell you all the gear.
-        </p>
+        <p>You'll need a surfboard, wetsuit, leash, and some wax. In colder months, you will need booties, gloves and a hood to keep you from freezing. Here's a list of some surf shops around the city and Long Island that will sell you all the gear:
+        </p><br><br>
+
+      <div id="shops">
+        <p><a href="https://aegirboardworks.com/">Aegir Boardworks</a></p><br><br>
+        <p><a href="http://www.patagonia.com/patagonia-nyc-bowery-313-bowery-new-york-city-ny-10003/store_2020721762.html">Patagonia Bowery</a></p><br><br>
+        <p><a href="http://rockawaybeachsurfshop.net/">Rockaway Beach Surf Shop</a></p><br><br>
+        <p><a href="http://www.boarderssurfshop.com/">Boarders</a></p><br><br>
+        <p><a href="http://breakwatersurfcompany.com/">Breakwater Surf Co.</a></p><br><br>
+        <p><a href="http://www.lbsurf.org/">Long Beach Surf Shop</a></p><br><br>
+        <p><a href="http://maritimesurf.com/">Maritime Surf</a></p><br><br>
+      </div>  <!end of shops div>
+
     </div>
 
     <div class="photogallery">
@@ -50,7 +84,8 @@
     <div class="surfboards">  <!surfboard div>
 
       <h2>Surfboard types</h2>
-      <h4>tap each board for more details</h4>
+      <h4>Boards come in different lengths and styles.<br>
+      Tap each board for more details</h4>
 
       <div id="boardicons">
 
@@ -195,16 +230,17 @@
 
   </div> <!end of page div>
 
-      <footer>
-          <p class="footer">maria.stegner@gmail.com 
+  <footer>
+    <p class="footer">maria.stegner@gmail.com</p>
 
-          <a href="http://www.mariastegner.com" target='_blank'><img src='images/footer_website.png'></a>
-          <a href="https://twitter.com/maria_stegner" target="_blank"><img src="images/footer_twitter.png"></a>
-          <a href="https://www.instagram.com/mariastegnerz/" target='_blank'><img src="images/footer_instagram.png"></a>
-          <a href="https://www.linkedin.com/in/maria-stegner-2333b14" target='_blank'><img src="images/footer_linkedin.png"></a>
-          <a href="https://medium.com/@maria.stegner" target='_blank'><img src="images/footer_medium.png"></a>
-          </p>
-      </footer>
+      <p>
+        <a href="http://www.mariastegner.com" target='_blank'><img src='images/footer_website.png'></a>
+        <a href="https://twitter.com/maria_stegner" target="_blank"><img src="images/footer_twitter.png"></a>
+        <a href="https://www.instagram.com/mariastegnerz/" target='_blank'><img src="images/footer_instagram.png"></a>
+        <a href="https://www.linkedin.com/in/maria-stegner-2333b14" target='_blank'><img src="images/footer_linkedin.png"></a>
+        <a href="https://medium.com/@maria.stegner" target='_blank'><img src="images/footer_medium.png"></a>
+      </p>
+  </footer>
 
 
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>

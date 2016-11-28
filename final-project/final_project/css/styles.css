@@ -24,7 +24,7 @@ p, h2, h3, a, ul {
 
 h1 {
 	font-family: 'Knewave', cursive;
-  	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 	color: white;
 	font-size: 3.75em;
 	letter-spacing: 0.15em;
@@ -118,6 +118,7 @@ h3 {
 	display: none;
 	margin: 0 auto;
 	padding: 5px;
+	height: 150px;
 }
 
 
@@ -216,6 +217,24 @@ header img {
 	border: 2px solid white;
 }
 
+.pagetitle2 {
+	width: 65%;
+	margin: 200px auto;
+	padding: 100px;
+	border: 2px solid white;
+}
+.pagetitle2 h1 {
+	font-family: 'Knewave', cursive;
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+	color: white;
+	font-size: 3.3em;
+	letter-spacing: 0.15em;
+	line-height: 1;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
 .musicplayer {
 	width: 300px;
 	margin: 30px auto;
@@ -233,11 +252,6 @@ header img {
 .main {
 	padding: 100px;
 }
-
-/*.maintextbox {
-	width: 60%;
-	margin: 0 auto;
-}*/
 
 .main p {
 	font-size: 1.4em;
@@ -264,14 +278,14 @@ header img {
 	display: inline-flex;
 	justify-content: center;
 	margin: 0 auto;
-	padding: 100px 300px 100px 300px;
+	padding: 100px 100px 100px 100px;
 	width: 100%;
 }
 
 .iconbox{
-	width: 20%;
+	width: 30%;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 10px;
 }
 
 .iconbox p, a {
@@ -386,16 +400,30 @@ header img {
 	cursor: pointer;
 }
 
-.beachdetail {
+.beaches {
+	width: 80%;
+	margin: 100px auto;
+	padding: 0;
 	display: flex;
-	margin: 50px auto;
-	width: 100%;
-	padding: 0 100px 100px 100px;
+}
+
+.beaches h4 {
+	font-family: "Knewave", cursive;
+	font-size: 1.2em;
+	letter-spacing: 0.06em;
+	line-height: 1.5;
+	text-align: left;
+	color: white;
+	margin: 0;
+}
+
+.beachdetail {
+	margin-left: 20px;
+	width: 60%;beachesb
 }
 
 .beachdetail p {
-	height: 200px;
-	margin: 20px;
+	/*height: 200px;*/
 	font-size: 1.2em;
 	line-height: 1.6;
 	letter-spacing: 0.05em;
@@ -403,20 +431,26 @@ header img {
 	font-family: 'Georgia', serif;
 }
 
-.beachdetail h4, a {
-	font-family: "Knewave", cursive;
-	font-size: 1.2em;
-	letter-spacing: 0.06em;
-	line-height: 1.5;
-	text-align: left;
-	color: white;
-
+.bigimage {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	flex: 1;
 }
 
-#bigimage {
-	width: 60%;
-	height: 60%;
-	padding: 0 30px 0 30px;
+.whitebox {
+	width: 100%;
+	background: white;
+}
+
+.whitebox img {
+	width: 8%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0 0 0;
+	display: block;
 }
 
 .beachconditions {
@@ -435,19 +469,6 @@ header img {
 	line-height: 1.6;
 	color: grey;
 	letter-spacing: .02em;
-}
-
-.whitebox {
-	width: 100%;
-	background: white;
-}
-
-.whitebox img {
-	width: 8%;
-	margin: 0 auto;
-	text-align: center;
-	padding: 30px 0 0 0;
-	display: block;
 }
 
 .conditions {
@@ -558,6 +579,11 @@ header img {
 .school img {
 	width: 60%;
 	border-radius: 50%
+}
+
+#shops a:hover {
+	color:#03b73f;
+
 }
 
 .photogallery {
@@ -689,11 +715,11 @@ header img {
 	padding-bottom: 100px;
 }
 
+
 .instabox img:hover {
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
-
 
 .filmrow, .instarow {
 	display: inline-flex;
@@ -708,8 +734,13 @@ header img {
 	display: center;
 }
 
+.instabox img {
+	width: 90%;
+}
+
 .instabox p {
 	color: white;
+	font-size: 1.3em;
 	margin: 0;
 	padding: 0;
 }
@@ -752,12 +783,12 @@ header img {
 footer {
 	background-color: black;
 	width: 100%;
-	padding: 50px;
-	margin: 100px 0 0 0;
+	padding: 30px;
+	margin: 50px 0 0 0;
 }
 
 footer a {
-	margin: 0 15px 0 15px;
+	margin: 0 20px;
 }
 
 footer img {
@@ -766,13 +797,13 @@ footer img {
 
 
 footer p {
+	display: inline-block;
 	font-family:'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	text-align: left;
 	letter-spacing: .05em;
 	color: white;
-	padding: 20px;
 	margin: 20px;
 }
 
@@ -787,8 +818,11 @@ footer p {
 }
 
 
-/*media queries*/
-@media (max-width: 800px) {
+
+/*media query for screens between 480 and 768px*/
+
+@media (max-width: 768px) and (min-width: 480px) {
+
 	#navbar {
 		display: none;
 	}
@@ -796,7 +830,8 @@ footer p {
 	#burger {
 		display: block;
 	}
-		#small-nav {
+	
+	#small-nav {
 		position: absolute;
 		width: 100%;
 	}
@@ -820,10 +855,490 @@ footer p {
 		font-size: 10px;
 	}
 
+	#heroindex, #herobeaches, #herogear, #heroinspiration 
+	{
+		width: 100%;
+		height: 60vh;
+		margin: 0;
+		padding: 50px 0 50px 0;
+		overflow: none;
+		border-bottom: 2px solid #03b73f;
+}
+
+	#heroindex {
+	background: url("../images/duotone/hero_index_duotone_med.jpg");
+}
+
+	#herobeaches {
+	background: url("../images/duotone/hero_lessons2_duotone_med.jpg");
+}
+
+	#herogear {
+	background: url("../images/duotone/hero_gear3_duotone_med.jpg");
+}
+
+	#herowetsuits {
+	background: url("../images/duotone/hero_wetsuits2_duotone_med.jpg");
+	width: 100%;
+	margin: 0;
+	padding: 100px;
+}
+
+	#heroinspiration {
+	background: url("../images/duotone/hero_inspiration_duotone_med.jpg");
+}
+
 	.pagetitle {
 		width: 90%
 		margin: 50px auto;
 		padding: 50px;
+		border: 2px solid white;
+	}
+
+	.main {
+		padding: 50px;
+	}
+
+	.main p {
+		width: 90%;
+		font-size: 1.9em;
+	}
+
+.main img {
+	width: 25%;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+	.surficon {
+		width: 30%;
+		display: block;
+		text-align: center;
+		margin: 50px auto -50px auto;
+		padding: 0;
+	}
+
+	.surfterms {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.lingo_row1, .lingo_row2, .lingo_row3 {
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+}
+
+	.lingo {
+		width: 70%;
+		margin: 30px auto;
+		text-align: center;
+		border: .5px solid white;
+}
+
+	.lingo img {
+		width: 30%;
+}
+
+	.word {
+		width: 100%;
+		padding: 50px 0;
+		margin: 0 auto;
+		display: block;
+}
+
+	.def {
+		font-family: 'Georgia', serif;
+		font-size: 1.3em;
+		line-height: 1.3;
+		letter-spacing: .005em;
+		color: white;
+		text-align: center;
+		display: none;
+		margin: 0 auto;
+		padding: 5px;
+}
+
+
+	.icons {
+		display: block;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 50px 100px 100px 100px;
+		width: 100%;
+	}
+
+	.iconbox{
+		width: 50%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.iconbox p, a {
+		text-align: center;
+		font-size: 1.2em;
+		font-family: 'Knewave', sans-serif;
+		letter-spacing: .1em;
+		color: white;
+		margin-top: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+
+	.iconbox p:hover {
+		color: #03b73f;
+	}
+
+	.iconbubble {
+		margin: 0 auto 10px auto;
+	}
+
+	footer {
+		background-color: black;
+		width: 100%;
+}
+
+	footer a {
+		margin: 10px 15px;
+		display: inline-block;
+}
+
+	footer img {
+		width: 30px;
+}
+
+
+	footer p {
+		font-family:'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 1.5em;
+		text-align: left;
+		letter-spacing: .05em;
+		color: white;
+		margin: 20px auto;
+		display: block;
+		text-align: center;
+}
+
+.beaches {
+		width: 500px;
+		margin: 30px auto 75px auto;
+		padding: 0;
+		display: block;
+}
+
+.beaches h4 {
+		font-family: "Knewave", cursive;
+		font-size: 2em;
+		letter-spacing: 0.06em;
+		line-height: 1.5;
+		text-align: left;
+		color: white;
+		margin: 0;
+}
+
+.beachdetail {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+}
+
+.beachdetail p {
+		font-size: 1.7em;
+		line-height: 1.7;
+		letter-spacing: 0.05em;
+		color: white;
+		font-family: 'Georgia', serif;
+}
+
+.bigimage {
+	width: 500px;
+	height: 500px;
+	margin: 20px auto;
+	padding: 0;
+	display: block;
+}
+
+.knewaveblack2 {
+	font-family: 'Knewave', cursive;
+	font-size: 2.8em;
+	letter-spacing: .3em;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	color: black;
+}
+
+.whitebox img {
+	width: 15%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0 0 0;
+	display: block;
+}
+
+.beachconditions {
+	width: 100%;
+	margin: 30px auto;
+	display: block;
+	background: white;
+}
+
+.beachconditions h3 {
+	font-size: 2em;
+	margin: 10px auto;
+	padding: 0 30px;
+	line-height: 1.6;
+	color: grey;
+	letter-spacing: .02em;
+}
+
+.conditions {
+	width: 100%;
+	padding: 10px;
+}
+
+
+.beachbutton {
+	width: 40%;
+	background: black;
+	margin: 30px auto;
+	padding: 10px;
+	text-align: center;
+	transition: all 0.2s ease 0s;
+}
+
+.beachbutton a {
+	font-size: 1.8em;
+	margin: 0 auto;
+	padding: 10px 0;
+	display: block;
+}
+
+.knewavewhite, .knewaveblack {
+	font-size: 2.8em;
+	letter-spacing: .3em;
+	padding: 40px 0 40px 0;
+}
+
+.schools {
+	width: 100%;
+	margin: 30px auto 60px auto;
+	padding: 0;
+	display: block;
+}
+
+.school {
+	margin: 0 auto 30px auto;
+	width: 85%;
+	display: block;
+	padding: 10px;
+}
+
+.school a, h3 {
+	font-family: 'Knewave', serif;
+	font-size: 1.4em;
+	line-height: 1.5;
+	letter-spacing: 0.06em;
+	text-align: center;
+	margin: 0;
+	display: block;
+}
+
+.school p {
+	font-family: 'Georgia', serif;
+	font-size: 1.5em;
+	line-height: 1.7em;
+	margin: 0;
+	text-align: center;
+}
+
+.school img {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.pagetitle2 {
+	width: 65%;
+	margin: 200px auto;
+	padding: 100px;
+	border: 2px solid white;
+}
+.pagetitle2 h1 {
+	font-size: 3.3em;
+	letter-spacing: 0.15em;
+	line-height: 1;
+}
+
+#instagallery {
+	margin: 0 auto;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+.instabox img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.instabox {
+	margin: 20px;
+	display: center;
+}
+
+.instabox p {
+	color: white;
+	font-size: 1.6em;
+	margin: 0;
+	padding: 0;
+}
+
+.instarow {
+	display: block;
+	justify-content: center;
+	padding: 0 20px 0 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.filmrow {
+	display: block;
+	justify-content: center;
+	padding: 0 20px 0 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#movies {
+	margin: 0 auto;
+	width: 100%;
+	padding: 10px;
+	background-color: black;
+}
+
+#movies p {
+	text-align: center;
+	font-size: 1.5em;
+	letter-spacing: 0.006em;
+	margin: -40px auto 20px auto;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.moviebox {
+	margin: 20px auto;
+	text-align: center;
+	width: 100%;
+}
+
+.moviebox img {
+	height: 400px;
+}
+
+#endless {
+	font-size: 1.8em;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	margin: 10px auto 30px auto;
+	width: 90%;
+}
+
+#videocontainer {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+#videocontainer img {
+	width: 25%;
+	display: block;
+	margin: 100px auto 0 auto;
+}
+
+} /*end of media query for screens between 480 and 768 px */
+
+
+
+
+
+/*media query for screens between 320 and 480 px */
+
+@media (max-width: 480px) and (min-width: 320px) {
+
+	#heroindex, #herobeaches, #herogear, #heroinspiration 
+	{
+		width: 100%;
+		height: 60vh;
+		margin: 0;
+		padding: 50px 0 50px 0;
+		overflow: none;
+		border-bottom: 2px solid #03b73f;
+}
+
+	#heroindex {
+	background: url("../images/duotone/hero_index_duotone_sm.jpg");
+}
+
+	#herobeaches {
+	background: url("../images/duotone/hero_lessons2_duotone_sm.jpg");
+}
+
+	#herogear {
+	background: url("../images/duotone/hero_gear3_duotone_sm.jpg");
+}
+
+	#herowetsuits {
+	background: url("../images/duotone/hero_wetsuits2_duotone_sm.jpg");
+	width: 100%;
+	overflow: none;
+	margin: 0;
+	padding: 100px;
+}
+
+	#heroinspiration {
+	background: url("../images/duotone/hero_inspiration_duotone_sm.jpg");
+}
+
+	#navbar {
+		display: none;
+	}
+
+	#burger {
+		display: block;
+	}
+	
+	#small-nav {
+		position: absolute;
+		width: 100%;
+	}
+
+	#small-nav a {
+		display: block;
+		text-decoration: none;
+		background: black;
+		color: white;
+		padding: 15px;
+}
+
+	#small-nav a:hover {
+		background: #03b73f;
+	}
+
+	#burger img {
+		width: 30px;
+	}
+
+	body {
+		font-size: 13px;
+	}
+
+	.pagetitle {
+		width: 100%
+		margin: 0 auto;
+		padding: 0px 0;
 		border: 2px solid white;
 	}
 
@@ -851,23 +1366,356 @@ footer p {
 	}
 
 	.lingo_row1, .lingo_row2, .lingo_row3 {
-		width: 90%;
+		width: 100%;
 		display: block;
 		margin: 0 auto;
 		padding: 0;
 }
 
 	.lingo {
-		width: 100%;
-		margin-bottom: 50px;
-		margin-right: auto;
-		margin-left: auto;
-		padding-bottom: 40px;
+		width: 70%;
+		margin: 30px auto;
 		text-align: center;
 		border: .5px solid white;
+}
+
+	.lingo img {
+		width: 30%;
+}
+
+	.word {
+		width: 100%;
+		padding: 50px 0;
+		margin: 0 auto;
+		display: block;
+}
+
+	.def {
+		font-family: 'Georgia', serif;
+		font-size: 1.3em;
+		line-height: 1.3;
+		letter-spacing: .005em;
+		color: white;
+		text-align: center;
+		display: none;
+		margin: 0 auto;
+		padding: 5px;
+}
 
 
+	.icons {
+		display: block;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 50px 100px 100px 100px;
+		width: 100%;
+	}
+
+	.iconbox{
+		width: 50%;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.iconbox p, a {
+		text-align: center;
+		font-size: 1.2em;
+		font-family: 'Knewave', sans-serif;
+		letter-spacing: .1em;
+		color: white;
+		margin-top: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+
+	.iconbox p:hover {
+		color: #03b73f;
+	}
+
+	.iconbubble {
+		margin: 0 auto 10px auto;
+	}
+
+	footer {
+		background-color: black;
+		width: 100%;
+	/*	padding: 20px;*/
+		/*margin: 20px 0 0 0;*/
+}
+
+	footer a {
+		margin: 10px 15px;
+		display: inline-block;
+}
+
+	footer img {
+		width: 30px;
+}
 
 
-} /*end of media queries
+	footer p {
+		font-family:'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 1.5em;
+		text-align: left;
+		letter-spacing: .05em;
+		color: white;
+		margin: 20px auto;
+		display: block;
+		text-align: center;
+}
 
+.main img {
+	width: 50%;
+	padding-bottom: 20px 0;
+}
+
+.beaches {
+		width: 275px;
+		margin: 20px auto 60px auto;
+		padding: 0;
+		display: block;
+}
+
+.beaches h4 {
+		font-family: "Knewave", cursive;
+		font-size: 1.8em;
+		letter-spacing: 0.06em;
+		line-height: 1.5;
+		text-align: left;
+		color: white;
+		margin: 0;
+}
+
+.beachdetail {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+}
+
+.beachdetail p {
+		font-size: 1.4em;
+		line-height: 1.6;
+		letter-spacing: 0.05em;
+		color: white;
+		font-family: 'Georgia', serif;
+}
+
+.bigimage {
+	width: 275px;
+	height: 275px;
+	margin: 20px auto;
+	padding: 0;
+	display: block;
+}
+
+
+.knewaveblack2 {
+	font-family: 'Knewave', cursive;
+	font-size: 2.8em;
+	letter-spacing: .3em;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	color: black;
+}
+
+.whitebox img {
+	width: 15%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0 0 0;
+	display: block;
+}
+
+.beachconditions {
+	width: 100%;
+	margin: 30px auto;
+	display: block;
+	background: white;
+}
+
+.beachconditions h3 {
+	font-size: 2em;
+	margin: 10px auto;
+	padding: 0 30px;
+	line-height: 1.6;
+	color: grey;
+	letter-spacing: .02em;
+}
+
+.conditions {
+	width: 100%;
+	padding: 10px;
+}
+
+
+.beachbutton {
+	width: 40%;
+	background: black;
+	margin: 30px auto;
+	padding: 10px;
+	text-align: center;
+	transition: all 0.2s ease 0s;
+}
+
+.beachbutton a {
+	font-size: 1.8em;
+	margin: 0 auto;
+	padding: 10px 0;
+	display: block;
+}
+
+.knewavewhite, .knewaveblack {
+	font-size: 2.8em;
+	letter-spacing: .3em;
+	padding: 40px 0 40px 0;
+}
+
+.schools {
+	width: 100%;
+	margin: 30px auto;
+	padding: 0;
+	display: block;
+}
+
+.school {
+	margin: 0 auto 30px auto;
+	width: 100%;
+}
+
+.school a, h3 {
+	font-size: 1.3em;
+	line-height: 1.3;
+	letter-spacing: 0.06em;
+	text-align: center;
+	margin: 0;
+	display: block;
+	width: 100%;
+}
+
+.school p {
+	font-size: 1.3em;
+	line-height: 1.5em;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.school img {
+	width: 220px;
+	height: 220px;
+	margin: 0 auto;
+}
+
+.main {
+	padding: 20px;
+}
+
+#instagallery {
+	margin: 0 auto;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+.instabox img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.instabox {
+	margin: 20px;
+	display: center;
+}
+
+.instabox p {
+	color: white;
+	font-size: 1.6em;
+	margin: 0;
+	padding: 0;
+}
+
+.instarow {
+	display: block;
+	justify-content: center;
+	padding: 0 20px 0 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.filmrow {
+	display: block;
+	justify-content: center;
+	padding: 0 20px 0 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#movies {
+	margin: 0 auto;
+	width: 100%;
+	padding: 10px;
+	background-color: black;
+}
+
+#movies p {
+	text-align: center;
+	font-size: 1.5em;
+	letter-spacing: 0.006em;
+	margin: -40px auto 20px auto;
+	padding-bottom: 30px;
+	color: white;
+}
+
+.moviebox {
+	margin: 20px auto;
+	text-align: center;
+	width: 100%;
+}
+
+.moviebox img {
+	height: 400px;
+}
+
+#endless {
+	font-size: 1.8em;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	margin: 10px auto 30px auto;
+	width: 90%;
+}
+
+#videocontainer {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+#videocontainer img {
+	width: 25%;
+	display: block;
+	margin: 100px auto 0 auto;
+}
+
+.pagetitle {
+	width: 80%;
+	margin: 100px auto;
+	padding: 20px;
+}
+
+.pagetitle2 {
+	width: 80%;
+	margin: 100px auto;
+	padding: 20px;
+}
+
+.pagetitle2 h1 {
+	color: white;
+	font-size: 2.2em;
+	letter-spacing: 0.15em;
+	text-align: center;
+	width: 100%;
+}
+
+
+} /*end of media query for screens between 320 and 480px */

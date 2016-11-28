@@ -1,5 +1,28 @@
 $(document).ready(function () {
 
+
+// keeps track of window width for responsive navbar
+
+$(window).resize(function () {
+    var width = $(window).width()
+
+    if (width >='768px') {
+      $('#small-nav').hide ()
+
+		  console.log($(window).width())
+    }
+	})
+
+  $(window).scroll(function () {
+    var offset = $(window).scrollTop();
+    console.log(offset);
+     
+  })
+
+$('#burger').click(function () {
+  $('#small-nav').slideToggle();
+  })
+
 //nav bar text color change on mouseenter/mouseleave
 
 	$('#navbar a').mouseenter(function () {
@@ -97,13 +120,13 @@ $(document).ready(function () {
 // surfboard click function to display text for each type of surfboard
 
 
-	$('.boardicon img').mouseesenter(function () {
-		$(this).find('p').css('display', 'block');
-	});
+	// $('.boardicon img').mouseesenter(function () {
+	// 	$(this).find('p').css('display', 'block');
+	// });
 
-	$('.boardicon img').mouseleave(function () {
-		$(this).find('p').css('display', 'none');
-	});
+	// $('.boardicon img').mouseleave(function () {
+	// 	$(this).find('p').css('display', 'none');
+	// });
 
 
 
@@ -163,32 +186,11 @@ function findBoards (height, weight){
 
 // beach thumbnails to bigger image
 
-	$('.thumb').click(function () {
-	   	var newSrc = $(this).attr('src');
-	  $('#bigimage').attr('src', newSrc);
+	// $('.thumb').click(function () {
+	//    	var newSrc = $(this).attr('src');
+	//   $('#bigimage').attr('src', newSrc);
 
-	})
-
-})
+	// });
 
 
-// keeps track of window width for responsive navbar
-$(window).resize(function () {
-    var width = $(window).width()
-
-    if (width >='880px') {
-      $('#small-nav').hide ()
-
-		  console.log($(window).width())
-    }
-	})
-
-  $(window).scroll(function () {
-    var offset = $(window).scrollTop();
-    console.log(offset);
-     
-  })
-
-$('#burger').click(function () {
-  $('#small-nav').slideToggle();
-  })
+}); //end of js script file

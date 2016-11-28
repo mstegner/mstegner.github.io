@@ -7,26 +7,40 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Chewy|Knewave|Mrs+Sheppards" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 <body>
 	<div id="page">
-	<header>
-		<div class="logo"><a href="index.html">
-		<img src="images/logo_black_400_400_horiz.jpg" alt="I Surf New York"></a></div>
-    	
-    	<nav class="navbar">
-     		<ul>
-          <li><a href="index.html">HOME</a></li>
-      		<li><a href="beaches.html">BEACHES</a></li>
-       		<li><a href="gear.html">GEAR</a></li>
-       		<li><a href="inspiration.html">INSPIRATION</a></li>
-      		</ul>  
-    	</nav>
 
-     	<div class="clear"></div>
-	</header>  <!end of header>
+	<header>
+    <div class="container">
+      <a href="index.html">
+      <img src="images/logo_black_400_400_horiz.jpg" alt="I Surf New York"></a>
+      
+      <nav id="navbar">
+         <a href="index.html">HOME</a>
+         <a href="beaches.html">BEACHES</a>
+          <a href="gear.html">GEAR</a>
+          <a href="inspiration.html">INSPIRATION</a> 
+      </nav>
+      <div id="burger">
+        <img src="images/hamburger-icon.png" alt=""></div>
+      <div class="clear"></div>
+    </div>
+  
+  </header>  <!end of header>
+
+
+     <!small nav bar>
+    <div id="small-nav">
+        <a href="index.html">Home</a>
+        <a href="beaches.html">Beaches</a>
+        <a href="gear.html">Gear</a>
+        <a href="inspiration.html">Inspiration</a>
+    </div>  <!end of small nav>
+
 
   <div id="herobeaches">
 
@@ -37,7 +51,7 @@
 
   <div class="main">
     <p><img src="images/icon_beach_white.svg"></p>
-  	<p>There are a few good places to surf, some of which you can get to by subway or commuter train. Check out the map below for the surfing beaches closest to the city</p>
+  	<p>There are a few good places to surf, some of which you can get to by subway or commuter train. Check out the map below for the surfing beaches closest to the city.</p>
   </div>
 
   <!music div>
@@ -50,11 +64,11 @@
 
 
     <div id="map"></div>  
-      <div id="mydiv"><p></p></div>
+     <!--  <div id="mydiv"><p></p></div> -->
 
     <!Google Map>
 
-
+<!-- 
       <div id="thumbnails">
 
           <img class="thumb" id="first" src="images/beach_rock1.jpg">
@@ -66,26 +80,45 @@
           <img class="thumb" id="fourth" src="images/beach_longbeach2.jpg">
       </div>
 
+          <div class="clear"></div> -->
+
+
+      <div class="beaches" id="marker1">
+          <img class="bigimage" src="images/beach_rock1.jpg">
+          <div class="beachdetail">
+            <h4>1. Beach 92nd Street, Rockaway</h4>
+            <p>Rockaway's main surfing beach is just blocks from the A train and perhaps New York's most crowded breaks. It's also one of the more dangerous and challenging waves-steep, fast, and often unpredictable. The congestion can make the natives (or those claiming to be natives) testy.</p>
+        </div>
           <div class="clear"></div>
+      </div>
+      
 
+      <div class="beaches" id="marker2">
+          <img class="bigimage" src="images/beach_rock2.jpg">
+          <div class="beachdetail">
+            <h4>2. Beach 67th Street, Rockaway</h4>
+            <p>Rock’s other surfing beach is every bit as steep and erratic as the break at 92nd Street, though not nearly as crowded or hostile, making it a better spot for learning. Novice surfers should stay aware of the wooden pilings protruding from the shoreline before catching a wave.</p>
+        </div>
+          <div class="clear"></div>
+      </div>
 
-      <div class="beachdetail">
+      <div class="beaches" id="marker3">
+          <img class="bigimage" src="images/beach_longbeach1.jpg">
+          <div class="beachdetail">
+            <h4>3. Lincoln Boulevard, Long Beach</h4>
+            <p>Mellow and incredibly predictable, the break is excellent for beginners (and located just a few blocks from the LIRR station and Unsound surf shop, where you can rent a board). Best spot for a post-surf nosh: the Beach House on West Beech Street.</p>
+        </div>
+          <div class="clear"></div>
+      </div>
 
-        <img id="bigimage" src="images/beach_rock1.jpg">
-          
-          <div id="first"><h4>Beach 92nd Street, Rockaway</h4>
-          <p>Rockaway's main surfing beach is just blocks from the A train and perhaps New York's most crowded breaks. It's also one of the more dangerous and challenging waves-steep, fast, and often unpredictable. The congestion can make the natives (or those claiming to be natives) testy.</p></div>
-
-          <div id="second"><h4>Beach 67th Street, Rockaway</h4>
-          <p>Rock’s other surfing beach is every bit as steep and erratic as the break at 92nd Street, though not nearly as crowded or hostile, making it a better spot for learning. Novice surfers should stay aware of the wooden pilings protruding from the shoreline before catching a wave.</p></div>
-
-          <div id="third"><h4>Lincoln Boulevard, Long Beach</h4>
-          <p>Mellow and incredibly predictable, the break is excellent for beginners (and located just a few blocks from the LIRR station and Unsound surf shop, where you can rent a board). Best spot for a post-surf nosh: the Beach House on West Beech Street.</p></div>
-
-          <div id="fourth"><h4>National Boulevard, Long Beach</h4>
-          <p>The consistent, user-friendly wave was one of the best-kept secrets of the Long Beach surf scene for years. Then came the posh Allegria Hotel, a National Boulevard surf cam (nysea.com), and the ongoing ASP World Tour event, all of which means its low-flying days are done.</p></div>
-
-      </div>  <!end of beachdetail div>
+      <div class="beaches" id="marker4">
+          <img class="bigimage" src="images/beach_longbeach2.jpg">
+          <div class="beachdetail">
+            <h4>4. National Boulevard, Long Beach</h4>
+            <p>The consistent, user-friendly wave was one of the best-kept secrets of the Long Beach surf scene for years. Then came the posh Allegria Hotel, a National Boulevard surf cam (nysea.com), and the ongoing ASP World Tour event, all of which means its low-flying days are done.</p>
+        </div>
+          <div class="clear"></div>
+      </div>  <!end of beaches>
 
 
       <div class='whitebox'>  <!white box div>
@@ -177,23 +210,22 @@
 
 
 
-      <footer>
-          <p class="footer">maria.stegner@gmail.com 
+    <footer>
+      <p class="footer">maria.stegner@gmail.com</p>
 
-          <a href="http://www.mariastegner.com" target='_blank'><img src='images/footer_website.png'></a>
-          <a href="https://twitter.com/maria_stegner" target="_blank"><img src="images/footer_twitter.png"></a>
-          <a href="https://www.instagram.com/mariastegnerz/" target='_blank'><img src="images/footer_instagram.png"></a>
-          <a href="https://www.linkedin.com/in/maria-stegner-2333b14" target='_blank'><img src="images/footer_linkedin.png"></a>
-          <a href="https://medium.com/@maria.stegner" target='_blank'><img src="images/footer_medium.png"></a>
-          </p>
-
-      </footer>
+      <p>
+        <a href="http://www.mariastegner.com" target='_blank'><img src='images/footer_website.png'></a>
+        <a href="https://twitter.com/maria_stegner" target="_blank"><img src="images/footer_twitter.png"></a>
+        <a href="https://www.instagram.com/mariastegnerz/" target='_blank'><img src="images/footer_instagram.png"></a>
+        <a href="https://www.linkedin.com/in/maria-stegner-2333b14" target='_blank'><img src="images/footer_linkedin.png"></a>
+        <a href="https://medium.com/@maria.stegner" target='_blank'><img src="images/footer_medium.png"></a>
+      </p>
+  </footer>
   
 
   </div>  <!end of page div>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdT2fgiN3Qz1YVOj2f-pzK_UfxjLr47u8"></script>
     <script src="js/surf.js"></script>
 
