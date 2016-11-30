@@ -60,6 +60,65 @@ $('#burger').click(function () {
 	})
 
 
+
+//scroll reveal effect on surf terms
+
+	window.sr = ScrollReveal({ reset: true });
+
+	sr.reveal('.pagetitle', { duration: 2000 }, 50);
+
+	sr.reveal('.pagetitle2', { duration: 2000 }, 50);
+
+	sr.reveal('.main', { duration: 2000 }, 50);
+
+	sr.reveal('.main p', { duration: 2000 }, 100);
+
+	sr.reveal('#map', { duration: 2000 }, 100);
+
+	sr.reveal('.beachdetail', { duration: 2000 }, 100);
+
+	sr.reveal('.whitebox img', { duration: 2000 }, 50);
+
+	sr.reveal('.whitebox h2', { duration: 2000 }, 50);
+
+	sr.reveal('.conditions', { duration: 2000 }, 50);
+
+	sr.reveal('.beachbutton', { duration: 2000 }, 50);
+
+	sr.reveal('.knewavewhite h2', { duration: 2000 }, 50);
+
+	sr.reveal('.knewavewhite p', { duration: 2000 }, 75);
+
+	sr.reveal('.school', { duration: 2000 }, 50);
+
+	sr.reveal('.photogallery img', { duration: 2000 }, 100);
+
+	sr.reveal('.surfboards h2', { duration: 2000 }, 100);
+
+	sr.reveal('.surfboards h4', { duration: 2000 }, 100);
+
+	sr.reveal('.surfboards h2', { duration: 2000 }, 100);
+
+	sr.reveal('.boardicon', { duration: 2000}, 75);
+
+	sr.reveal('.movies h2', { duration: 2000}, 50);
+
+	sr.reveal('.instabox', { duration: 2000 }, 50);
+
+	sr.reveal('.moviebox', { duration: 2000 }, 50);
+
+	sr.reveal('.surfterms img', { duration: 2000 }, 100);
+
+	sr.reveal('.surfterms h2', { duration: 2000 }, 100);
+
+	sr.reveal('.lingo', { duration: 2000 }, 50);
+
+	sr.reveal('.icons', { duration: 2000 }, 100);
+
+	sr.reveal('footer p', { duration: 2000 }, 150);
+
+
+
 //lessons blurb link color change on mouseenter/mouseleave
 
 	$('.lessonsblurb a').mouseenter(function () {
@@ -120,14 +179,9 @@ $('#burger').click(function () {
 // surfboard click function to display text for each type of surfboard
 
 
-	// $('.boardicon img').mouseesenter(function () {
-	// 	$(this).find('p').css('display', 'block');
-	// });
-
-	// $('.boardicon img').mouseleave(function () {
-	// 	$(this).find('p').css('display', 'none');
-	// });
-
+	$('.board').click(function () {
+		$(this).siblings('p').show();
+	});
 
 
 // surfboard sizing calculator
