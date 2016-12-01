@@ -234,6 +234,15 @@ function findBoards (height, weight){
 		});
 	};
 
+marker.addListener('click', function() {
+          $('#map')
+              .css('height', '50%')
+              .css('width', '50%')
+          map.setZoom(15);
+          map.setCenter(marker.getPosition());
+        });
+      }
+
 
 	initMap()
 
