@@ -2,16 +2,19 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-size: 16px;
+	width: 1200px;
+	margin: 0 auto;
+	background: linear-gradient(to top right, #012266, #1280ed);
+}
+
 #page {
 	background: #012266; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left top, #012266, #1280ed); /* For Safari 5.1 to 6.0 */
   	background: -o-linear-gradient(bottom right, #012266, #1280ed); /* For Opera 11.1 to 12.0 */
   	background: -moz-linear-gradient(bottom right, #012266, #1280ed); /* For Firefox 3.6 to 15 */
   	background: linear-gradient(to bottom right, #012266, #1280ed); /* Standard syntax */
-}
-
-body {
-	font-size: 16px;
 }
 
 p {
@@ -24,7 +27,7 @@ p, h2, h3, a, ul {
 
 h1 {
 	font-family: 'Knewave', cursive;
-  text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+  	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 	color: white;
 	font-size: 3.75em;
 	letter-spacing: 0.15em;
@@ -49,6 +52,50 @@ h3 {
 	padding: 0;
 }
 
+header {
+	background-color: black;
+	padding: 10px;
+	width: 1200px;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	border-bottom: 2px solid #03b73f;
+	z-index: 100;
+}
+
+header a {
+	display: inline-block;
+}
+
+header img {
+	float: left;
+	width: 130px;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#navbar{
+	float: right;
+	padding-top: 10px;
+}
+
+#navbar a {
+	font-size: 1.2em;
+	color: white;
+	margin-left: 2em;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: .1em;
+	font-weight: 700;
+	display: inline-block;
+}
+
+.clear {clear: both;}
+
 .knewavewhite, .knewaveblack {
 	font-family: 'Knewave', cursive;
 	font-size: 2.3em;
@@ -72,7 +119,7 @@ h3 {
 }
 
 
-.surficon {
+#surficon {
 	width: 10%;
 	display: block;
 	text-align: center;
@@ -120,57 +167,6 @@ h3 {
 	padding: 5px;
 	height: 150px;
 }
-
-
-body {
-	width: 100%;
-	margin: 0 auto;
-	background: linear-gradient(to top right, #012266, #1280ed);
-}
-
-header {
-	background-color: black;
-	padding: 10px;
-	width: 100%;
-	margin: 0;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	border-bottom: 2px solid #03b73f;
-	z-index: 100;
-}
-
-header a {
-	display: inline-block;
-}
-
-header img {
-	float: left;
-	width: 130px;
-}
-
-.container {
-	width: 95%;
-	margin: 0 auto;	
-}
-
-#navbar{
-	float: right;
-	padding-top: 10px;
-}
-
-#navbar a {
-	font-size: 1.2em;
-	color: white;
-	margin-left: 40px;
-	text-decoration: none;
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: .1em;
-	font-weight: 700;
-	display: inline-block;
-}
-
-.clear {clear: both;}
 
 #heroindex, #herobeaches, #herogear, #herolessons, #heroinspiration 
 	{
@@ -304,6 +300,12 @@ header img {
 	color: #03b73f;
 }
 
+.giphybox {
+	width: 30%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .iconbubble {
 	margin: 0 auto 10px auto;
 }
@@ -343,23 +345,25 @@ header img {
 }
 
 .suits {
-	width: 90%;
-	margin: 50px auto;
-	padding: 0 200px 0 200px;
+	background: white;
+	width: 100%
+	margin: 100px auto;
+	padding: 100px 15px;
 }
 
 .wetsuiticons {
-	width: 85%;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 }
 
 .wetsuitdetail {
 	flex: 1;
-	margin: 20px auto;
-	padding: 10px;
+	margin: 10px auto;
+	padding: 0px;
 	overflow: auto;
-	transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out;
+	position: relative;
 }
 
 .wetsuitdetail:hover { transform: scale(1.1); 
@@ -367,17 +371,71 @@ header img {
 
 .wetsuitdetail img {
 	margin: 0 auto;
-	width: 40%;
+	width: 80%;
+	display: block;
+	opacity: .3;
 }
 
 .wetsuitblurb {
 	font-family: 'Knewave', serif;
 	letter-spacing: .05em;
 	font-weight: 700;
-	color: white;
-	font-size: 1em;
-	text-align: left;
+	color: #03b73f;
+	font-size: 1.3em;
+	text-align: center;
 }
+
+#watertemp {
+	background: linear-gradient(to top right, #012266, #1280ed);
+	width: 100%;
+	margin: 100px auto;
+}
+
+#watertemp h2 {
+	font-family: 'Knewave', cursive;
+	text-shadow: none;
+	font-size: 2.2em;
+	letter-spacing: 0.3em;
+	line-height: 1.5;
+	text-align: center;
+	margin: 20px auto 40px auto;
+	padding: 0;
+	color: white;
+}
+
+#tempgiphys {
+	display: flex;
+	width: 100%;
+}
+
+.giphybox {
+	margin: 0 auto;
+}
+
+#temp1, #temp2, #temp3 {
+	width: 50%;
+	margin: 0 10px;
+	text-align: center;
+	padding: 0 10px 0 10px;
+	position: relative; 
+	padding-bottom: 56.25%; height: 0; overflow: 
+	hidden; max-width: 95%; } 
+
+#temp1 iframe, 
+#temp1 object, #temp1 
+	embed { position: absolute; top: 0; 
+	left: 0; width: 100%; height: 100%; }
+
+
+#temp2 iframe, 
+#temp2 object, #temp1 
+	embed { position: absolute; top: 0; 
+	left: 0; width: 100%; height: 100%; }
+
+#temp3 iframe, 
+#temp3 object, #temp1 
+	embed { position: absolute; top: 0; 
+	left: 0; width: 100%; height: 100%; }
 
 #thumbnails{
 	margin: 0 auto;
@@ -504,14 +562,14 @@ header img {
 
 .whitebutton {
 	width: 20%;
-	background: white;
+	background: #03b73f;
 	margin: 40px auto;
 	padding: 5px;
     transition: all 0.2s ease 0s;
 }
 
 .whitebutton:hover {
-	 background: #03b73f;
+	 background: white;
 }
 
 .beachbutton a {
@@ -603,7 +661,7 @@ header img {
 	width: 100%;
 }
 
-.surfboards h2, .blackbox h2 {
+.surfboards h2, .blackbox h2, .suits h2 {
 	font-family: 'Knewave', cursive;
 	text-shadow: none;
 	font-size: 2.2em;
@@ -615,8 +673,12 @@ header img {
 	color: white;
 }
 
+.suits h2 {
+	color: black;
+}
+
 .blackbox {
-	background: black;
+	background: linear-gradient(to top right, #121212, #344766);;
 	text-align: center;
 	padding: 100px 0 100px 0;
 	width: 100%;
@@ -681,6 +743,43 @@ header img {
 	padding: 0;
 	position: absolute;
 	bottom: 400px;
+}
+
+#longboard_size {
+	width: 70%;
+	margin: 20px auto 50px auto;
+}
+
+#boardsize p{
+	color: #03b73f;
+	font-family: 'Knewave', cursive;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+#tempbuttons {
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+}
+
+.tempbutton {
+	width: 30%;
+	background: black;
+	margin: 30px auto;
+	padding: 10px;
+	text-align: center;
+	transition: all 0.2s ease 0s;
+	display: block;
+}
+
+.tempbutton p {
+	color: white;
+	font-family: ;
+}
+
+.tempbutton:hover {
+	 background: #03b73f;
 }
 
 .imagegallery {
@@ -768,18 +867,10 @@ header img {
 }
 
 .moviebox { transition: all .2s ease-in-out; }
+
 .moviebox:hover { transform: scale(1.1); }
 
 
-/*#videocontainer {
-	width: 90%;
-	margin: 0 auto;
-	padding-bottom: 100px;
-	text-align: center;
-}*/
-
-
-/*FROM EMBED RESPONSIVELY*/
 
 #video { 
 	width: 65%;
@@ -788,8 +879,10 @@ header img {
 	padding-bottom: 100px;
 	position: relative; 
 	padding-bottom: 56.25%; height: 0; overflow: 
-	hidden; max-width: 100%; } #video iframe, 
-	#video object, #video 
+	hidden; max-width: 100%; } 
+
+#video iframe, 
+#video object, #video 
 	embed { position: absolute; top: 0; 
 	left: 0; width: 100%; height: 100%; }
 
@@ -910,18 +1003,18 @@ footer p {
 	background: url("../images/duotone/hero_inspiration_duotone_med.jpg");
 }
 
-	.pagetitle {
+.pagetitle {
 		width: 90%
 		margin: 50px auto;
 		padding: 50px;
 		border: 2px solid white;
 	}
 
-	.main {
+.main {
 		padding: 50px;
 	}
 
-	.main p {
+.main p {
 		width: 90%;
 		font-size: 1.9em;
 	}
@@ -932,21 +1025,21 @@ footer p {
 	padding-bottom: 10px;
 }
 
-	.surficon {
+.surficon { pointer-events: none;
 		width: 30%;
 		display: block;
 		text-align: center;
 		margin: 50px auto -50px auto;
 		padding: 0;
-	}
+}
 
-	.surfterms {
+.surfterms {
 		width: 100%;
 		margin: 0 auto;
 		padding: 0;
-	}
+}
 
-	.lingo_row1, .lingo_row2, .lingo_row3 {
+.lingo_row1, .lingo_row2, .lingo_row3 {
 		width: 100%;
 		display: block;
 		margin: 0 auto;
@@ -973,8 +1066,8 @@ footer p {
 
 	.def {
 		font-family: 'Georgia', serif;
-		font-size: 1.3em;
-		line-height: 1.3;
+		font-size: 1.5em;
+		line-height: 1.8;
 		letter-spacing: .005em;
 		color: white;
 		text-align: center;

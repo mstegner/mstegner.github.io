@@ -61,27 +61,28 @@ $('#burger').click(function () {
 
 
 
-//scroll reveal effect on surf terms
+//scroll reveal effect on surf terms... went a bit crazy with it
+//the first time, and now I'm commenting out a few of these :O
 
-	window.sr = ScrollReveal({ reset: true });
+	window.sr = ScrollReveal({ reset: false });
 
 	sr.reveal('.pagetitle', { duration: 2000 }, 50);
 
 	sr.reveal('.pagetitle2', { duration: 2000 }, 50);
 
-	sr.reveal('.main', { duration: 2000 }, 50);
+	// sr.reveal('.main', { duration: 2000 }, 50);
 
-	sr.reveal('.main p', { duration: 2000 }, 100);
+	// sr.reveal('.main p', { duration: 2000 }, 100);
 
-	sr.reveal('#map', { duration: 2000 }, 100);
+	// sr.reveal('#map', { duration: 2000 }, 100);
 
-	sr.reveal('.beachdetail', { duration: 2000 }, 100);
+	// sr.reveal('.beachdetail', { duration: 2000 }, 100);
 
 	sr.reveal('.whitebox img', { duration: 2000 }, 50);
 
-	sr.reveal('.whitebox h2', { duration: 2000 }, 50);
+	// sr.reveal('.whitebox h2', { duration: 2000 }, 50);
 
-	sr.reveal('.conditions', { duration: 2000 }, 50);
+	// sr.reveal('.conditions', { duration: 2000 }, 50);
 
 	sr.reveal('.beachbutton', { duration: 2000 }, 50);
 
@@ -105,17 +106,20 @@ $('#burger').click(function () {
 
 	sr.reveal('.instabox', { duration: 2000 }, 50);
 
-	sr.reveal('.moviebox', { duration: 2000 }, 50);
-
 	sr.reveal('.surfterms img', { duration: 2000 }, 100);
-
-	sr.reveal('.surfterms h2', { duration: 2000 }, 100);
 
 	sr.reveal('.lingo', { duration: 2000 }, 50);
 
 	sr.reveal('.icons', { duration: 2000 }, 100);
 
 	sr.reveal('footer p', { duration: 2000 }, 150);
+
+
+// CLICK ACTIVATED ANIMATION ON SURFICON which is not working!
+
+$('.trigger').on('click', function() {
+	$(this).toggleClass('.clicked');
+	});
 
 
 
@@ -157,7 +161,7 @@ $('#burger').click(function () {
 	            $(this).attr("src", src);
 	        })
 	        .mouseleave(function() {
-	            var src = $(this).attr("src").replace("_color.jpg", ".jpg");
+	            var src = $(this).attr("src").replace("_color.jpg", ".jpg"); 
 	            $(this).attr("src", src);
 	});
 
@@ -166,11 +170,11 @@ $('#burger').click(function () {
 
 	$(".board").hover(function(){
 	    $(this).attr("src", function(index, attr){
-	        return attr.replace(".png", "_active.png");
+	        return attr.replace(".svg", "_active.svg");
 	    });
 	}, function(){
 	    $(this).attr("src", function(index, attr){
-	        return attr.replace("_active.png", ".png");
+	        return attr.replace("_active.svg", ".svg");
 	    });
 	});
 
@@ -184,7 +188,7 @@ $('#burger').click(function () {
 	});
 
 
-// surfboard sizing calculator
+// surfboard sizing calculator - need to finish this!!
 
 var heights = {
 	height1: [["/images/eight.png","/images/eightsix.png"],["/images/eight.png","/images/eightsix.png"],["/images/eightsix.png","/images/nine.png"],["/images/ninesix.png","/images/ten.png"],["/images/ninesix.png","/images/ten.png"]],
@@ -199,6 +203,13 @@ function findBoards (height, weight){
 		$('body').prepend('<img src="' + obj[i] + '">');
 	}
 }
+
+// MOUSE CLICK EVENT TO SHOW WHICH WETSUIT TO WEAR BASED ON TEMP
+
+$('.iconbox').on('click', function () {
+	$('.wetsuit img').css({opacity: 1});
+
+});
 
 //Google Maps API
 
@@ -234,14 +245,14 @@ function findBoards (height, weight){
 		});
 	};
 
-marker.addListener('click', function() {
-          $('#map')
-              .css('height', '50%')
-              .css('width', '50%')
-          map.setZoom(15);
-          map.setCenter(marker.getPosition());
-        });
-      }
+// marker.addListener('click', function() {
+//           $('#map')
+//               .css('height', '50%')
+//               .css('width', '50%')
+//           map.setZoom(15);
+//           map.setCenter(marker.getPosition());
+//         });
+//       }
 
 
 	initMap()
@@ -256,4 +267,4 @@ marker.addListener('click', function() {
 	// });
 
 
-}); //end of js script file
+}) //end of js script file
