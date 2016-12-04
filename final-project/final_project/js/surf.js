@@ -184,32 +184,64 @@ $('.trigger').on('click', function() {
 
 
 	$('.board').click(function () {
-		$(this).siblings('p').show();
+		$(this).siblings('p').toggle();
 	});
 
 
 // surfboard sizing calculator - need to finish this!!
 
-var heights = {
-	height1: [["/images/eight.png","/images/eightsix.png"],["/images/eight.png","/images/eightsix.png"],["/images/eightsix.png","/images/nine.png"],["/images/ninesix.png","/images/ten.png"],["/images/ninesix.png","/images/ten.png"]],
-	height2: [],
-	height3: [],
-	height4: []
-};
-function findBoards (height, weight){
-	var obj = heights[height][weight];
-	console.log(obj);
-	for (i=0; i < obj.length; i++){
-		$('body').prepend('<img src="' + obj[i] + '">');
-	}
+//board size ranges
+
+var range1 = '8ft or 8ft 6in'
+var range2 = '8ft 6in or 9ft'
+var range3 = '9ft or 9ft 6in'
+var range4 = '9ft 6in or 10ft'
+var range5 = '10ft'
+
+//boards object
+var boards = {
+	h1: [range1, range1, range2, range4, range4],
+	h2: [range2, range2, range3, range3, range3],
+	h3: [range2, range3, range3, range4, range5],
+	h4: [range3, range3, range4, range5, range5]
 }
+
+// click for board
+// get height and weight values from DOM
+
+$('.whitebutton').click(function () {	
+
+height = $('#height').val() // "h3"
+weight = parseInt($('#weight').val()) // "3" => 3
+
+var myBoard = boards[height][weight]
+console.log(myBoard);
+
+$('#boardsize p').text(myBoard)
+
+});
+
+
+// var heights = {
+// 	height1: [["/images/eight.png","/images/eightsix.png"],["/images/eight.png","/images/eightsix.png"],["/images/eightsix.png","/images/nine.png"],["/images/ninesix.png","/images/ten.png"],["/images/ninesix.png","/images/ten.png"]],
+// 	height2: [],
+// 	height3: [],
+// 	height4: []
+// };
+// function findBoards (height, weight){
+// 	var obj = heights[height][weight];
+// 	console.log(obj);
+// 	for (i=0; i < obj.length; i++){
+// 		$('body').prepend('<img src="' + obj[i] + '">');
+// 	}
+// }
 
 // MOUSE CLICK EVENT TO SHOW WHICH WETSUIT TO WEAR BASED ON TEMP
 
-$('.iconbox').on('click', function () {
-	$('.wetsuit img').css({opacity: 1});
-
+$('#warm').click(function () {
+	$('.wetsuitdetail1 img').css('opacity', 1);
 });
+
 
 //Google Maps API
 
@@ -221,15 +253,12 @@ $('.iconbox').on('click', function () {
 		zoom: 11,
 		center: uluru
 		});
+
 		var marker1 = new google.maps.Marker( {
 			position: {lat: 40.583634, lng: -73.814789},
-			map: map
+			map: map,
+			// icon: { url: 'images/map_marker1.svg'}
 		});
-
-	  marker1.addListener('click', function() {
-	    // your custom code to add text to each beach marker
-	    // $('#mydiv').text('some beach')
-	  });
 
 	var marker2 = new google.maps.Marker( {
 			position: {lat: 40.5909, lng: -73.7969},
@@ -243,28 +272,26 @@ $('.iconbox').on('click', function () {
 			position: {lat: 40.583659, lng: -73.666846},
 			map: map
 		});
+			  marker1.addListener('click', function() {
+	  	document.querySelector('#marker1').scrollIntoView( {
+	  		behavior: 'smooth'
+	  	})
+	    // your custom code to add text to each beach marker
+	    // $('#mydiv').text('some beach')
+	  });
+
+	marker2.addListener('click', function() {
+	  	document.querySelector('#marker2').scrollIntoView( {
+	  		behavior: 'smooth'
+	  	})
+	    // your custom code to add text to each beach marker
+	    // $('#mydiv').text('some beach')
+	  });
 	};
 
-// marker.addListener('click', function() {
-//           $('#map')
-//               .css('height', '50%')
-//               .css('width', '50%')
-//           map.setZoom(15);
-//           map.setCenter(marker.getPosition());
-//         });
-//       }
 
 
-	initMap()
-
-
-// beach thumbnails to bigger image
-
-	// $('.thumb').click(function () {
-	//    	var newSrc = $(this).attr('src');
-	//   $('#bigimage').attr('src', newSrc);
-
-	// });
+initMap()
 
 
 }) //end of js script file

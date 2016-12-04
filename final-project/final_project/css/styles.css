@@ -357,7 +357,7 @@ header img {
 	display: flex;
 }
 
-.wetsuitdetail {
+.wetsuitdetail1, .wetsuitdetail2, .wetsuitdetail3 {
 	flex: 1;
 	margin: 10px auto;
 	padding: 0px;
@@ -366,16 +366,38 @@ header img {
 	position: relative;
 }
 
-.wetsuitdetail:hover { transform: scale(1.1); 
+.wetsuitdetail1:hover { 
+		transform: scale(1.1); 
 }
 
-.wetsuitdetail img {
+.wetsuitdetail2:hover { 
+		transform: scale(1.1); 
+}
+
+.wetsuitdetail3:hover { 
+		transform: scale(1.1); 
+}
+
+.wetsuitdetail1 img {
 	margin: 0 auto;
 	width: 80%;
 	display: block;
 	opacity: .3;
 }
 
+.wetsuitdetail2 img {
+	margin: 0 auto;
+	width: 80%;
+	display: block;
+	opacity: .3;
+}
+
+.wetsuitdetail3 img {
+	margin: 0 auto;
+	width: 80%;
+	display: block;
+	opacity: .3;
+}
 .wetsuitblurb {
 	font-family: 'Knewave', serif;
 	letter-spacing: .05em;
@@ -418,8 +440,8 @@ header img {
 	text-align: center;
 	padding: 0 10px 0 10px;
 	position: relative; 
-	padding-bottom: 56.25%; height: 0; overflow: 
-	hidden; max-width: 95%; } 
+	padding-bottom: 20%; height: 0; 
+	overflow: hidden; max-width: 95%; } 
 
 #temp1 iframe, 
 #temp1 object, #temp1 
@@ -774,8 +796,14 @@ header img {
 }
 
 .tempbutton p {
+	text-align: center;
+	font-family:'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	font-size: 1.1em;
 	color: white;
-	font-family: ;
+	margin: 0 auto;
+	padding: 10px 0;
+	display: block;
 }
 
 .tempbutton:hover {
