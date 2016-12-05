@@ -70,19 +70,7 @@ $('#burger').click(function () {
 
 	sr.reveal('.pagetitle2', { duration: 2000 }, 50);
 
-	// sr.reveal('.main', { duration: 2000 }, 50);
-
-	// sr.reveal('.main p', { duration: 2000 }, 100);
-
-	// sr.reveal('#map', { duration: 2000 }, 100);
-
-	// sr.reveal('.beachdetail', { duration: 2000 }, 100);
-
 	sr.reveal('.whitebox img', { duration: 2000 }, 50);
-
-	// sr.reveal('.whitebox h2', { duration: 2000 }, 50);
-
-	// sr.reveal('.conditions', { duration: 2000 }, 50);
 
 	sr.reveal('.beachbutton', { duration: 2000 }, 50);
 
@@ -188,7 +176,7 @@ $('.trigger').on('click', function() {
 	});
 
 
-// surfboard sizing calculator - need to finish this!!
+// surfboard sizing calculator - thanks for your help Chandler!
 
 //board size ranges
 
@@ -222,76 +210,21 @@ $('#boardsize p').text(myBoard)
 });
 
 
-// var heights = {
-// 	height1: [["/images/eight.png","/images/eightsix.png"],["/images/eight.png","/images/eightsix.png"],["/images/eightsix.png","/images/nine.png"],["/images/ninesix.png","/images/ten.png"],["/images/ninesix.png","/images/ten.png"]],
-// 	height2: [],
-// 	height3: [],
-// 	height4: []
-// };
-// function findBoards (height, weight){
-// 	var obj = heights[height][weight];
-// 	console.log(obj);
-// 	for (i=0; i < obj.length; i++){
-// 		$('body').prepend('<img src="' + obj[i] + '">');
-// 	}
-// }
-
 // MOUSE CLICK EVENT TO SHOW WHICH WETSUIT TO WEAR BASED ON TEMP
 
 $('#warm').click(function () {
 	$('.wetsuitdetail1 img').css('opacity', 1);
 });
 
+$('#chilly').click(function () {
+	$('.wetsuitdetail2 img').css('opacity', 1);
+});
 
-//Google Maps API
-
-	var map;
-
-	function initMap() {
-		var uluru = {lat: 40.640162, lng: -73.785403};
-		var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 11,
-		center: uluru
-		});
-
-		var marker1 = new google.maps.Marker( {
-			position: {lat: 40.583634, lng: -73.814789},
-			map: map,
-			// icon: { url: 'images/map_marker1.svg'}
-		});
-
-	var marker2 = new google.maps.Marker( {
-			position: {lat: 40.5909, lng: -73.7969},
-			map: map
-		});
-	var marker3 = new google.maps.Marker( {
-			position: {lat: 40.582857, lng: -73.652380},
-			map: map
-		});
-	var marker4 = new google.maps.Marker( {
-			position: {lat: 40.583659, lng: -73.666846},
-			map: map
-		});
-			  marker1.addListener('click', function() {
-	  	document.querySelector('#marker1').scrollIntoView( {
-	  		behavior: 'smooth'
-	  	})
-	    // your custom code to add text to each beach marker
-	    // $('#mydiv').text('some beach')
-	  });
-
-	marker2.addListener('click', function() {
-	  	document.querySelector('#marker2').scrollIntoView( {
-	  		behavior: 'smooth'
-	  	})
-	    // your custom code to add text to each beach marker
-	    // $('#mydiv').text('some beach')
-	  });
-	};
+$('#arctic').click(function () {
+	$('.wetsuitdetail3 img').css('opacity', 1);
+});
 
 
-
-initMap()
 
 
 }) //end of js script file

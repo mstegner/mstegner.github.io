@@ -4,7 +4,7 @@
 
 body {
 	font-size: 16px;
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 	background: linear-gradient(to top right, #012266, #1280ed);
 }
@@ -17,7 +17,7 @@ body {
   	background: linear-gradient(to bottom right, #012266, #1280ed); /* Standard syntax */
 }
 
-p {
+p
 	font-size: 1em;
 }
 
@@ -347,7 +347,7 @@ header img {
 .suits {
 	background: white;
 	width: 100%
-	margin: 100px auto;
+	margin: 0 auto;
 	padding: 100px 15px;
 }
 
@@ -617,13 +617,14 @@ header img {
 	width: 100%;
 	display: flex;
 	margin: 40px auto;
-	padding: 0 20px;
+	padding: 5px;
 }
 
 .school {
 	flex: 1;
-	padding: 20px;
-	margin: 20px 0;
+	padding: 5px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .school a, h3 {
@@ -652,7 +653,7 @@ header img {
 }
 
 .school img {
-	width: 60%;
+	width: 75%;
 	border-radius: 50%
 }
 
@@ -961,10 +962,19 @@ footer p {
 }
 
 
+/*MEDIA QUERY FOR SCREENS BETWEEN 800 AND 1200 PX
+*/
 
-/*media query for screens between 480 and 768px*/
+@media (max-width: 1200px) and (min-width: 800px) {
 
-@media (max-width: 768px) and (min-width: 480px) {
+	body {
+	font-size: 16px;
+	width: 800px;
+}
+
+	header {
+		max-width: 800px;
+	}
 
 	#navbar {
 		display: none;
@@ -976,7 +986,52 @@ footer p {
 	
 	#small-nav {
 		position: absolute;
-		width: 100%;
+		width: 800px;
+	}
+
+	#small-nav a {
+		display: block;
+		text-decoration: none;
+		background: black;
+		color: white;
+		padding: 15px;
+	}
+	#small-nav a:hover {
+		background: #03b73f;
+	}
+
+	#burger img {
+		width: 30px;
+	}
+
+}
+
+/*SCREENS BETWEEN 480 AND 800 PX
+*/
+
+
+@media (max-width: 799px) and (min-width: 480px) {
+
+	body {
+		font-size: 10px;
+		width: 480px;
+	}
+	
+	header {
+		max-width: 480px;
+	}
+
+	#navbar {
+		display: none;
+	}
+
+	#burger {
+		display: block;
+	}
+	
+	#small-nav {
+		position: absolute;
+		width: 480px;
 	}
 
 	#small-nav a {
@@ -992,10 +1047,6 @@ footer p {
 
 	#burger img {
 		width: 30px;
-	}
-
-	body {
-		font-size: 10px;
 	}
 
 	#heroindex, #herobeaches, #herogear, #heroinspiration 
@@ -1267,16 +1318,15 @@ footer p {
 
 .schools {
 	width: 100%;
-	margin: 30px auto 60px auto;
+	margin: 10px auto;
 	padding: 0;
 	display: block;
 }
 
 .school {
-	margin: 0 auto 30px auto;
-	width: 85%;
-	display: block;
-	padding: 10px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 5px;
 }
 
 .school a, h3 {
@@ -1411,6 +1461,15 @@ footer p {
 
 @media (max-width: 480px) and (min-width: 320px) {
 
+	body {
+		font-size: 9px;
+		width: 320px;
+	}
+	
+	header {
+		max-width: 320px;
+	}
+
 	#heroindex, #herobeaches, #herogear, #heroinspiration 
 	{
 		width: 100%;
@@ -1472,10 +1531,6 @@ footer p {
 
 	#burger img {
 		width: 30px;
-	}
-
-	body {
-		font-size: 13px;
 	}
 
 	.pagetitle {
@@ -1716,13 +1771,13 @@ footer p {
 
 .schools {
 	width: 100%;
-	margin: 30px auto;
+	margin: 5px auto;
 	padding: 0;
 	display: block;
 }
 
 .school {
-	margin: 0 auto 30px auto;
+	margin: 0 auto;
 	width: 100%;
 }
 
@@ -1858,6 +1913,63 @@ footer p {
 	letter-spacing: 0.15em;
 	text-align: center;
 	width: 100%;
+}
+
+.photogallery {
+	width: 95%;
+	margin: 10px auto;
+	padding-bottom: 20px;
+	display: block;
+}
+
+.photogallery img {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	display: block;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+#boardicons {
+	margin: 0 auto;
+	padding: 0;
+	align-items: center;
+	display: block;
+	width: 100%;
+}
+
+.boardicon {
+	margin: 0 auto 300px auto;
+	height: 500px;
+	width: 95%;
+	position: relative;
+}
+
+.boardicon p {
+	background-color: #03b73f;
+	opacity: .95;
+	font-size: 0.8em;
+	line-height: 1.4;
+	letter-spacing: 0.004em;
+	color: white;
+	font-family: 'Georgia', serif;
+	margin: 0 auto;
+	padding: 15px;
+	top: 300px;
+	z-index: 100;
+	position: absolute;
+	width: 100%;
+	display: none;
+}
+
+.board img {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	bottom: 400px;
 }
 
 
