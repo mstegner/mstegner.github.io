@@ -214,14 +214,20 @@ $('#boardsize p').text(myBoard)
 
 $('#warm').click(function () {
 	$('.wetsuitdetail1 img').css('opacity', 1);
+	$('.wetsuitdetail2 img').css('opacity', .3);
+	$('.wetsuitdetail3 img').css('opacity', .3);
 });
 
 $('#chilly').click(function () {
 	$('.wetsuitdetail2 img').css('opacity', 1);
+	$('.wetsuitdetail1 img').css('opacity', .3);
+	$('.wetsuitdetail3 img').css('opacity', .3);
 });
 
 $('#arctic').click(function () {
 	$('.wetsuitdetail3 img').css('opacity', 1);
+	$('.wetsuitdetail1 img').css('opacity', .3);
+	$('.wetsuitdetail2 img').css('opacity', .3);
 });
 
 
