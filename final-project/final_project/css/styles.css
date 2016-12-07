@@ -17,8 +17,9 @@ body {
   	background: linear-gradient(to bottom right, #012266, #1280ed); /* Standard syntax */
 }
 
-p
+p {
 	font-size: 1em;
+	font-family: 'Georgia', serif;
 }
 
 p, h2, h3, a, ul {
@@ -262,6 +263,7 @@ header img {
 	color: white;
 	width: 60%;
 	letter-spacing: .03em;
+	font-family: 'Georgia', serif;
 }
 
 .main img {
@@ -1125,6 +1127,7 @@ footer p {
 .main p {
 		width: 90%;
 		font-size: 1.9em;
+		font-family: 'Georgia', serif;
 	}
 
 .main img {
@@ -1597,6 +1600,7 @@ footer p {
 	.main p {
 		width: 90%;
 		font-size: 1.5em;
+		font-family: 'Georgia', serif;
 	}
 
 	.surficon {
