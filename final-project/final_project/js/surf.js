@@ -90,6 +90,10 @@ $('#burger').click(function () {
 
 	sr.reveal('.boardicon', { duration: 2000}, 75);
 
+	sr.reveal('.blackbox h2', { duration: 2000}, 75);
+
+	sr.reveal('#longboard_size img', { duration: 2000}, 75);
+
 	sr.reveal('.movies h2', { duration: 2000}, 50);
 
 	sr.reveal('.instabox', { duration: 2000 }, 50);
@@ -103,7 +107,12 @@ $('#burger').click(function () {
 	sr.reveal('footer p', { duration: 2000 }, 150);
 
 
-// CLICK ACTIVATED ANIMATION ON SURFICON which is not working!
+// ANIMATE.CSS PULSE EFFECT ON TEMP BUTTONS ON GEAR PAGE
+
+// $('tempbutton').addClass('animated infinite pulse');
+
+
+// CLICK ACTIVATED ANIMATION ON SURFICON
 
 $('.trigger').on('click', function() {
 	$(this).toggleClass('.clicked');

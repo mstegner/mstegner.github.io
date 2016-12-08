@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 
 	var locations = [
-		['Beach 92nd Street, Rockaway:', 40.583634, -73.814789],
+		['Beach 92nd Street, Rockaway', 40.583634, -73.814789,],
 		['Beach 67th Street, Rockaway', 40.5909, -73.7969],
 		['Lincoln Boulevard, Long Beach', 40.582857, -73.652380],
 		['National Boulevard, Long Beach', 40.583659, -73.666846],
@@ -39,12 +39,8 @@ $(document).ready(function () {
           infowindow.setContent(locations[i][0]);
           infowindow.open(map, marker);
         }
-      })(marker, i));
+      })(marker, i,));
     }
-
-
-
-
 
 
 })
