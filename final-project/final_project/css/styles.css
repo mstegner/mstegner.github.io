@@ -233,7 +233,7 @@ header img {
 
 .pagetitle2 {
 	width: 60%;
-	margin: 60px auto;
+	margin: 300px auto;
 	padding: 60px;
 	border: 2px solid white;
 }
@@ -862,6 +862,10 @@ header img {
     filter: alpha(opacity=50);
 }
 
+.instabox img {
+	width: 30%;
+}
+
 .filmrow, .instarow {
 	display: inline-flex;
 	justify-content: center;
@@ -876,7 +880,7 @@ header img {
 }
 
 .instabox img {
-	width: 90%;
+	width: 275px;
 }
 
 .instabox p {
@@ -894,7 +898,7 @@ header img {
 	text-align: center;
 	color: white;
 	margin: 10px auto 30px auto;
-	width: 45%;
+	width: 55%;
 }
 
 .moviebox img {
@@ -934,6 +938,7 @@ header img {
 .videocredit {
 	font-family: 'Georgia' serif;
 	font-size: 1em;
+	font-style: italic;
 	color: white;
 	text-align: center;
 	margin: 10px auto 50px auto;
@@ -946,6 +951,21 @@ header img {
 	color: white;
 	text-align: center;
 	margin: 10px auto 50px auto;
+}
+
+#credits p {
+	color: white;
+	width: 10%;
+}
+
+#small-nav, #small-nav a {
+	display: none;
+}
+
+#burger {
+	display: none;
+	float: right;
+	margin-top: 5px;
 }
 
 footer {
@@ -973,22 +993,6 @@ footer p {
 	letter-spacing: .05em;
 	color: white;
 	margin: 10px;
-}
-
-#credits p {
-	/*font-family: 'Open Sans Condensed', sans-serif;*/
-	color: white;
-	width: 10%;
-}
-
-#small-nav, #small-nav a {
-	display: none;
-}
-
-#burger {
-	display: none;
-	float: right;
-	margin-top: 5px;
 }
 
 
@@ -1028,11 +1032,19 @@ footer p {
 		text-decoration: none;
 		background: black;
 		color: white;
-		padding: 15px;
+		padding: 10px 0 15px 0;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 1.1em;
+		font-weight: 700;
 	}
+
 	#small-nav a:hover {
 		background: #03b73f;
 	}
+
+	#small-nav a:nth-child(1) {
+	padding-top: 90px;
+}
 
 	#burger img {
 		width: 30px;
@@ -1040,7 +1052,7 @@ footer p {
 
 	.pagetitle {
 	width: 60%;
-	margin: 250px auto;
+	margin: 300px auto;
 	padding: 50px;
 	border: 2px solid white;
 }
@@ -1057,6 +1069,10 @@ footer p {
 	padding: 0;
 }
 
+.main p {
+	width: 90%;
+}
+
 .musicplayer p {
 	font-size: 1.1em;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -1065,6 +1081,40 @@ footer p {
 	color: white;
 }
 
+#instagallery {
+	width: 100%;
+}
+
+.instarow {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.instabox img {
+	width: 230px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.instabox p {
+	font-size: 1.1em;
+}
+
+.filmrow {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.filmrow {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.moviebox img {
+	width: 220px;
+	margin: 0 auto;
+}
 
 .photogallery {
 	width: 90%;
@@ -1080,6 +1130,10 @@ footer p {
 	display: block;
 	padding: 10px;
 	border-radius: 50%;
+}
+
+#endless {
+	width: 95%;
 }
 
 }
@@ -1117,8 +1171,16 @@ footer p {
 		text-decoration: none;
 		background: black;
 		color: white;
-		padding: 15px;
+		padding: 10px 0;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 1.4em;
+		font-weight: 700;
 }
+
+	#small-nav a:nth-child(1) {
+	padding-top: 80px;
+}
+
 	#small-nav a:hover {
 		background: #03b73f;
 	}
@@ -1127,12 +1189,11 @@ footer p {
 		width: 30px;
 	}
 
-	#heroindex, #herobeaches, #herogear, #heroinspiration 
-	{
+	#heroindex, #herobeaches, #herogear, #heroinspiration {
 		width: 100%;
 		height: 60vh;
 		margin: 0;
-		padding: 20px 0 20px 0;
+		padding: 100px 0 20px 0;
 		overflow: none;
 		border-bottom: 2px solid #03b73f;
 }
@@ -1162,7 +1223,7 @@ footer p {
 
 .pagetitle {
 	width: 50%
-	margin: 15px auto;
+	margin: 50px auto 0 auto;
 	padding: 20px;
 	border: 2px solid white;
 }
@@ -1172,7 +1233,7 @@ footer p {
 }
 
 .main p {
-		width: 90%;
+		width: 100%;
 		font-size: 1.9em;
 		font-family: 'Georgia', serif;
 }
@@ -1186,9 +1247,15 @@ footer p {
 }
 
 .main img {
-	width: 25%;
+	width: 40%;
 	text-align: center;
 	padding-bottom: 10px;
+}
+
+.videocredit {
+	font-size: 1.4em;
+	line-height: 1.6;
+	font-style: italic;
 }
 
 .surficon { pointer-events: none;
@@ -1276,48 +1343,21 @@ footer p {
 		margin: 0 auto 10px auto;
 	}
 
-	footer {
-		background-color: black;
-		width: 100%;
-}
-
-	footer a {
-		margin: 10px 15px;
-		display: inline-block;
-}
-
-	footer img {
-		width: 30px;
-}
-
-
-	footer p {
-		font-family:'Open Sans Condensed', sans-serif;
-		font-weight: 700;
-		font-size: 1.5em;
-		text-align: left;
-		letter-spacing: .05em;
-		color: white;
-		margin: 20px auto;
-		display: block;
-		text-align: center;
-}
-
 .beaches {
 		width: 100%
-		margin: 20px auto 50px auto;
-		padding: 10px;
+		margin: 10px auto;
+	/*	padding: 10px;*/
 		display: block;
 }
 
 .beaches h4 {
 		font-family: "Knewave", cursive;
 		font-size: 2em;
-		letter-spacing: 0.06em;
+		letter-spacing: 0.1em;
 		line-height: 1.5;
 		text-align: left;
 		color: white;
-		margin: 15px auto;
+		margin: 10px auto;
 }
 
 .beachdetail {
@@ -1423,7 +1463,7 @@ footer p {
 	text-align: left;
 	margin: 0;
 	display: block;
-	padding: 10px 0 10px 0;
+	padding: 0;
 }
 
 .school p {
@@ -1454,10 +1494,23 @@ footer p {
 	line-height: 1;
 }
 
+.bluebox {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
 #instagallery {
 	margin: 0 auto;
 	width: 100%;
-	padding-bottom: 100px;
+	padding-bottom: 40px;
+}
+
+.instarow {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .instabox img:hover {
@@ -1466,23 +1519,18 @@ footer p {
 }
 
 .instabox {
-	margin: 20px;
-	display: center;
+	margin: 0 auto;
+}
+
+.instabox img {
+	width: 400px;
 }
 
 .instabox p {
 	color: white;
-	font-size: 1.6em;
-	margin: 0;
-	padding: 0;
-}
-
-.instarow {
-	display: block;
-	justify-content: center;
-	padding: 0 20px 0 20px;
-	width: 100%;
+	font-size: 1.5em;
 	margin: 0 auto;
+	padding: 0 0 15px 0;
 }
 
 .filmrow {
@@ -1519,25 +1567,30 @@ footer p {
 	height: 400px;
 }
 
-#endless {
-	font-size: 1.8em;
-	line-height: 2;
-	letter-spacing: 0.04em;
-	margin: 10px auto 30px auto;
-	width: 90%;
-}
-
 #videocontainer {
-	width: 75%;
+	width: 100%;
 	margin: 0 auto;
 	padding-bottom: 100px;
 	text-align: center;
 }
 
 #videocontainer img {
-	width: 25%;
+	width: 40%;
 	display: block;
 	margin: 100px auto 0 auto;
+}
+
+#video {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#endless {
+	font-size: 1.8em;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	margin: 10px auto 30px auto;
+	width: 100%;
 }
 
 .photogallery {
@@ -1554,6 +1607,33 @@ footer p {
 	display: block;
 	padding: 5px;
 	border-radius: 50%;
+}
+
+footer {
+		background-color: black;
+		width: 100%;
+}
+
+	footer a {
+		margin: 10px 15px;
+		display: inline-block;
+}
+
+	footer img {
+		width: 30px;
+}
+
+
+	footer p {
+		font-family:'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 1.5em;
+		text-align: left;
+		letter-spacing: .05em;
+		color: white;
+		margin: 20px auto;
+		display: block;
+		text-align: center;
 }
 
 } /*end of media query for screens between 480 and 768 px */
@@ -1624,7 +1704,7 @@ footer p {
 	
 	#small-nav {
 		position: absolute;
-		width: 100%;
+		width: 320px;
 	}
 
 	#small-nav a {
@@ -1632,8 +1712,16 @@ footer p {
 		text-decoration: none;
 		background: black;
 		color: white;
-		padding: 15px;
+		font-size: 2em;
+		font-weight: 700;
+		font-family: 'Open Sans Condensed', sans-serif;
+		padding: 10px 0 10px 0;
 }
+
+	#small-nav a:nth-child(1) {
+		padding-top: 80px;
+	}
+
 
 	#small-nav a:hover {
 		background: #03b73f;
@@ -1752,35 +1840,6 @@ footer p {
 	.iconbubble {
 		margin: 0 auto 10px auto;
 	}
-
-	footer {
-		background-color: black;
-		width: 100%;
-	/*	padding: 20px;*/
-		/*margin: 20px 0 0 0;*/
-}
-
-	footer a {
-		margin: 10px 15px;
-		display: inline-block;
-}
-
-	footer img {
-		width: 30px;
-}
-
-
-	footer p {
-		font-family:'Open Sans Condensed', sans-serif;
-		font-weight: 700;
-		font-size: 1.5em;
-		text-align: left;
-		letter-spacing: .05em;
-		color: white;
-		margin: 20px auto;
-		display: block;
-		text-align: center;
-}
 
 .main img {
 	width: 50%;
@@ -2022,8 +2081,8 @@ footer p {
 }
 
 .pagetitle {
-	width: 60%;
-	margin: 20px auto;
+	width: 75%;
+	margin: 250px auto;
 	padding: 20px;
 }
 
@@ -2096,6 +2155,35 @@ footer p {
 	padding: 0;
 	position: absolute;
 	bottom: 400px;
+}
+
+	footer {
+		background-color: black;
+		width: 100%;
+	/*	padding: 20px;*/
+		/*margin: 20px 0 0 0;*/
+}
+
+	footer a {
+		margin: 10px 15px;
+		display: inline-block;
+}
+
+	footer img {
+		width: 30px;
+}
+
+
+	footer p {
+		font-family:'Open Sans Condensed', sans-serif;
+		font-weight: 700;
+		font-size: 1.5em;
+		text-align: left;
+		letter-spacing: .05em;
+		color: white;
+		margin: 20px auto;
+		display: block;
+		text-align: center;
 }
 
 
