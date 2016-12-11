@@ -113,6 +113,13 @@ header img {
 	color: black;
 }
 
+.aloha {
+		font-family: 'Knewave', cursive;
+		font-size: 3em;
+		letter-spacing: .1em;
+		padding: 80px 0 20px 0;
+}
+
 .surfterms {
 	width: 100%;
 	margin: 0 auto;
@@ -703,22 +710,6 @@ header img {
 	color: white;
 }
 
-.suits h2 {
-	color: black;
-}
-
-.blackbox {
-	background: linear-gradient(to top right, #121212, #344766);;
-	text-align: center;
-	padding: 100px 0 100px 0;
-	width: 100%;
-}
-
-.surfboards {
-	margin: 0 auto;
-	/*padding: 10px;*/
-}
-
 .surfboards h4 {
 	font-size: 1em;
 	line-height: 1.6;
@@ -730,6 +721,17 @@ header img {
 	color: white;
 }
 
+.suits h2 {
+	color: black;
+}
+
+.blackbox {
+	background: linear-gradient(to top right, #121212, #344766);;
+	text-align: center;
+	padding: 100px 0 140px 0;
+	width: 100%;
+}
+
 .clear {
 	clear: both;
 }
@@ -739,7 +741,7 @@ header img {
 	padding: 0;
 	align-items: center;
 	display: flex;
-	width: 90%;
+	width: 100%;
 }
 
 .boardicon {
@@ -748,6 +750,13 @@ header img {
 	width: 12%;
 	position: relative;
 }
+
+.boardname {
+		font-family: 'Knewave', cursive;
+		color: white;
+		font-size: 1.4em;
+		letter-spacing: .08em;
+	}
 
 .boardicon p {
 	background-color: #03b73f;
@@ -783,8 +792,10 @@ header img {
 #boardsize p{
 	color: #03b73f;
 	font-family: 'Knewave', cursive;
-	font-size: 1.8em;
+	font-size: 1.7em;
 	text-align: center;
+	margin: 0 auto;
+	padding: 0;
 }
 
 #tempbuttons {
@@ -941,7 +952,8 @@ header img {
 	font-style: italic;
 	color: white;
 	text-align: center;
-	margin: 10px auto 50px auto;
+	margin: 10px auto;
+	padding: 0 20px;
 	width: 100%;
 }
 
@@ -950,7 +962,6 @@ header img {
 	font-size: 1em;
 	color: white;
 	text-align: center;
-	margin: 10px auto 50px auto;
 }
 
 #credits p {
@@ -1054,6 +1065,38 @@ footer p {
 		width: 30px;
 	}
 
+	#heroindex, #herobeaches, #herogear, #heroinspiration {
+		width: 100%;
+		height: 60vh;
+		margin: 0;
+		padding: 100px 0 20px 0;
+		overflow: none;
+		border-bottom: 2px solid #03b73f;
+}
+
+	#heroindex {
+	background: url("../images/duotone/hero_index_duotone_med.jpg");
+}
+
+	#herobeaches {
+	background: url("../images/duotone/hero_lessons2_duotone_med.jpg");
+}
+
+	#herogear {
+	background: url("../images/duotone/hero_gear3_duotone_med.jpg");
+}
+
+	#herowetsuits {
+	background: url("../images/duotone/hero_wetsuits2_duotone_med.jpg");
+	width: 100%;
+	margin: 0;
+	padding: 30px;
+}
+
+	#heroinspiration {
+	background: url("../images/duotone/hero_inspiration_duotone_med.jpg");
+}
+
 	.pagetitle {
 	width: 60%;
 	margin: 300px auto;
@@ -1075,6 +1118,39 @@ footer p {
 
 .main p {
 	width: 90%;
+}
+
+.aloha {
+		font-family: 'Knewave', cursive;
+		font-size: 3em;
+		letter-spacing: .1em;
+		padding: 80px 0 20px 0;
+	}
+
+.boardname {
+	font-family: 'Knewave', cursive;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: .08em;
+	}
+
+.boardicon {
+	margin: 0 5px;
+	width: 100%;
+}
+
+.boardicon p {
+	font-size: 0.8em;
+	line-height: 1.4;
+	letter-spacing: 0.004em;
+	font-family: 'Georgia', serif;
+	margin: 0 auto;
+	padding: 5px;
+	top: 200px;
+	z-index: 100;
+	position: absolute;
+	width: 100%;
+	display: none;
 }
 
 .musicplayer p {
@@ -1195,7 +1271,7 @@ footer p {
 
 	#heroindex, #herobeaches, #herogear, #heroinspiration {
 		width: 100%;
-		height: 60vh;
+		height: 100vh;
 		margin: 0;
 		padding: 100px 0 20px 0;
 		overflow: none;
@@ -1203,26 +1279,26 @@ footer p {
 }
 
 	#heroindex {
-	background: url("../images/duotone/hero_index_duotone_med.jpg");
+	background: url("../images/duotone/hero_index_duotone_sm.jpg");
 }
 
 	#herobeaches {
-	background: url("../images/duotone/hero_lessons2_duotone_med.jpg");
+	background: url("../images/duotone/hero_lessons2_duotone_sm.jpg");
 }
 
 	#herogear {
-	background: url("../images/duotone/hero_gear3_duotone_med.jpg");
+	background: url("../images/duotone/hero_gear3_duotone_sm.jpg");
 }
 
 	#herowetsuits {
-	background: url("../images/duotone/hero_wetsuits2_duotone_med.jpg");
+	background: url("../images/duotone/hero_wetsuits2_duotone_sm.jpg");
 	width: 100%;
 	margin: 0;
-	padding: 30px;
+	padding: 0;
 }
 
 	#heroinspiration {
-	background: url("../images/duotone/hero_inspiration_duotone_med.jpg");
+	background: url("../images/duotone/hero_inspiration_duotone_sm.jpg");
 }
 
 .pagetitle {
@@ -1230,6 +1306,19 @@ footer p {
 	margin: 50px auto 0 auto;
 	padding: 20px;
 	border: 2px solid white;
+}
+
+.pagetitle2 {
+	width: 50%;
+	margin: 5px auto;
+	padding: 10px;
+	border: 2px solid white;
+}
+
+.pagetitle2 h1 {
+	font-size: 3.3em;
+	letter-spacing: 0.15em;
+	line-height: 1;
 }
 
 .main {
@@ -1241,6 +1330,42 @@ footer p {
 		font-size: 1.9em;
 		font-family: 'Georgia', serif;
 }
+
+.photogallery {
+	width: 100%;
+	margin: 10px auto;
+	padding-bottom: 20px;
+	display: block;
+}
+
+.photogallery img {
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	display: block;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+.boardicon {
+	margin: 0 5px;
+	width: 100%;
+}
+
+.boardicon p {
+	font-size: 0.8em;
+	line-height: 1.4;
+	letter-spacing: 0.004em;
+	font-family: 'Georgia', serif;
+	margin: 0 auto;
+	padding: 5px;
+	top: 100px;
+	z-index: 100;
+	position: absolute;
+	width: 100%;
+	display: none;
+}
+
 
 .musicplayer p {
 	font-size: 1.1em;
@@ -1260,6 +1385,7 @@ footer p {
 	font-size: 1.4em;
 	line-height: 1.6;
 	font-style: italic;
+	margin: 0 20px;
 }
 
 .surficon { pointer-events: none;
@@ -1486,18 +1612,6 @@ footer p {
 	display: block;
 }
 
-.pagetitle2 {
-	width: 50%;
-	margin: 15px auto;
-	padding: 10px;
-	border: 2px solid white;
-}
-.pagetitle2 h1 {
-	font-size: 3.3em;
-	letter-spacing: 0.15em;
-	line-height: 1;
-}
-
 .bluebox {
 	width: 100%;
 	margin: 0 auto;
@@ -1605,8 +1719,8 @@ footer p {
 }
 
 .photogallery img {
-	width: 125px;
-	height: 125px;
+	width: 300px;
+	height: 300px;
 	margin: 0 auto;
 	display: block;
 	padding: 5px;
@@ -1743,30 +1857,32 @@ footer {
 		width: 100%;
 		margin: 0 auto;
 		border: 0;
+		text-align: center;
 	}
 
 	.pagetitle h1 {
 		font-family: 'Knewave', cursive;
 	  	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 		color: white;
-		font-size: 7em;
+		font-size: 5em;
 		letter-spacing: 0.15em;
 		line-height: 1;
-		text-align: center;
 		padding: 0;
+		margin: 0 auto;
 }
 
 	.pagetitle2 {
-	width: 100%;
-	margin: 200px auto;
+		width: 100%;
+		margin: 0 auto;
+		border: none;
 }
 
 	.pagetitle2 h1 {
-	color: white;
-	font-size: 2.2em;
-	letter-spacing: 0.15em;
-	text-align: center;
-	width: 100%;
+		color: white;
+		font-size: 5em;
+		letter-spacing: 0.15em;
+		text-align: center;
+		margin: 50px auto 0 auto;
 }
 
 	.main {
@@ -1775,17 +1891,24 @@ footer {
 
 	.main p {
 		width: 95%;
-		font-size: 2.3em;
-		line-height: 2.1;
+		font-size: 1.8em;
+		line-height: 1.6;
 		font-family: 'Georgia', serif;
 	}
 
+	.aloha {
+		font-family: 'Knewave', cursive;
+		font-size: 3em;
+		letter-spacing: .1em;
+		padding: 80px 0 20px 0;
+	}
+
 	.musicplayer p {
-	font-size: 1.1em;
-	font-family: 'Open Sans Condensed', sans-serif;
-	letter-spacing: .1em;
-	font-weight: 700;
-	color: white;
+		font-size: 1.1em;
+		font-family: 'Open Sans Condensed', sans-serif;
+		letter-spacing: .1em;
+		font-weight: 700;
+		color: white;
 }
 
 	#surficon {
@@ -1820,6 +1943,11 @@ footer {
 		width: 50%;
 }
 
+	#lastlingodiv {
+		margin-bottom: 200px;
+	}
+
+
 	.word {
 		font-size: 2.5em;
 		width: 100%;
@@ -1841,10 +1969,17 @@ footer {
 }
 
 	.videocredit {
-		font-size: 1.6em;
-		line-height: 1.8;
+		font-size: 1.4em;
+		line-height: 1.5;
 		padding: 10px;
 	}
+
+	#map {
+		height: 40vh;
+		width: 70%;
+		margin: 0 auto 50px auto;
+		padding: 0;
+}
 
 
 	.icons {
@@ -1880,307 +2015,440 @@ footer {
 		margin: 0 auto 10px auto;
 	}
 
-.main img {
-	width: 50%;
-	padding-bottom: 20px 0;
+	.main img {
+		width: 50%;
+		padding-bottom: 20px 0;
 }
 
-.beaches {
-		width: 100%
+	.beaches {
+			width: 100%
+			margin: 0 auto;
+			padding: 0;
+			display: block;
+}
+
+	.beaches h4 {
+			font-family: "Knewave", cursive;
+			font-size: 2.3em;
+			letter-spacing: 0.06em;
+			line-height: 1.5;
+			text-align: left;
+			color: white;
+			margin: 0 auto;
+			padding: 10px 5px 0px 5px;
+}
+
+	.beachdetail {
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+	}
+
+	.beachdetail p {
+			font-size: 2em;
+			line-height: 1.4;
+			letter-spacing: 0.05em;
+			color: white;
+			font-family: 'Georgia', serif;
+			padding: 5px;
+			margin: 0 auto;
+	}
+
+	.bigimage {
+		width: 320px;
+		height: 320px;
 		margin: 0 auto;
 		padding: 0;
 		display: block;
-}
+	}
 
-.beaches h4 {
-		font-family: "Knewave", cursive;
+
+	.knewaveblack2 {
+		font-family: 'Knewave', cursive;
+		font-size: 2.8em;
+		letter-spacing: .3em;
+		text-align: center;
+		padding: 10px 0 10px 0;
+		color: black;
+	}
+
+	.whitebox img {
+		width: 15%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 30px 0 0 0;
+		display: block;
+	}
+
+	.beachconditions {
+		width: 100%;
+		margin: 30px auto;
+		display: block;
+		background: white;
+	}
+
+	.beachconditions h3 {
+		font-size: 2em;
+		margin: 10px auto;
+		padding: 0 30px;
+		line-height: 1.6;
+		color: grey;
+		letter-spacing: .02em;
+	}
+
+	.conditions {
+		width: 100%;
+		padding: 10px;
+	}
+
+
+	.beachbutton {
+		width: 40%;
+		background: black;
+		margin: 30px auto;
+		padding: 10px;
+		text-align: center;
+		transition: all 0.2s ease 0s;
+	}
+
+	.beachbutton a {
 		font-size: 1.8em;
-		letter-spacing: 0.06em;
-		line-height: 1.5;
-		text-align: left;
-		color: white;
-		margin: 0;
-}
+		margin: 0 auto;
+		padding: 10px 0;
+		display: block;
+	}
 
-.beachdetail {
+	.knewavewhite, .knewaveblack {
+		font-size: 4.5em;
+		line-height: 1.2;
+		letter-spacing: .3em;
+		padding: 80px 0 10px 0;
+	}
+
+	.aloha {
+		font-family: 'Knewave', cursive;
+		font-size: 3em;
+		letter-spacing: .1em;
+		padding: 80px 0 20px 0;
+	}
+
+
+	.schools {
+		width: 100%;
+		margin: 5px auto 150px auto;
+		padding: 0;
+		display: block;
+	}
+
+	.school {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.school a, h3 {
+		font-size: 1.6em;
+		line-height: 1.1;
+		letter-spacing: 0.08em;
+		text-align: left;
+		margin: 0;
+		display: block;
+		width: 100%;
+	}
+
+	.school p {
+		font-size: 1.8em;
+		line-height: 1.5em;
+		margin: 0;
+		text-align: left;
+		width: 100%;
+	}
+
+	.school img {
+		width: 220px;
+		height: 220px;
+		margin: 20px auto;
+		display: block;
+	}
+
+	#shops a {
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	#shops a:hover {
+		background-color:#03b73f;
+		color: white;
+	}
+
+	.surfboards {
 		width: 100%;
 		margin: 0 auto;
-		padding: 20px;
-}
+	}
 
-.beachdetail h4 {
+	.surfboards h2 {
+		font-size: 3em;
+		letter-spacing: 0.3em;
+		text-align: center;
+		margin: 20px auto 10px auto;
+		padding: 0;
+	}
+
+	.surfboards h4 {
+		font-size: 1.6em;
+		line-height: 1.8;
+		letter-spacing: 0.05em;
+		margin: 0 auto;
+		padding: 0px 20px 40px 20px;
+	}
+
+	#boardicons {
+		margin: 0 auto;
+		padding: 0;
 		width: 100%;
+		display: block;
+	}
+
+	.boardicon {
+		display: block;
+		width: 90%;
+		height: 70vh;
+		position: relative;
+		text-align: center;
+		margin: 0 auto 20px auto;
+	}
+
+	.boardicon img {
+		width: 30%;
+		margin: 0 auto;
+		padding: 0;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.boardicon p {
+		background-color: #03b73f;
+		opacity: .95;
+		font-size: 1.7em;
+		text-align: left;
+		line-height: 1.4;
+		color: white;
+		font-family: 'Georgia', serif;
 		margin: 0 auto;
 		padding: 10px;
+		width: 100%;
+		z-index: 100;
+		position: absolute;
+		top: 100px;
+	}
+
+	.boardname {
+		font-family: 'Knewave', cursive;
+		color: white;
+		font-size: 1.8em;
+		letter-spacing: .08em;
+	}
+
+	.blackbox h2 {
+		font-size: 3em;
+		letter-spacing: 0.3em;
+		text-align: center;
+		margin: 20px auto 10px auto;
+		padding: 0;
 }
 
-.beachdetail p {
-		font-size: 1.4em;
-		line-height: 1.6;
-		letter-spacing: 0.05em;
+	.boardform {
+		text-align: center;
+		margin: 15px auto;
+		font-size: 2.5em;
 		color: white;
 		font-family: 'Georgia', serif;
 }
 
-.bigimage {
-	width: 275px;
-	height: 275px;
-	margin: 20px auto;
-	padding: 0;
-	display: block;
+	.whitebutton {
+		width: 60%;
+		margin: 40px auto 0 auto;
+		padding: 5px;
+	    transition: all 0.2s ease 0s;
 }
 
-
-.knewaveblack2 {
-	font-family: 'Knewave', cursive;
-	font-size: 2.8em;
-	letter-spacing: .3em;
-	text-align: center;
-	padding: 10px 0 10px 0;
-	color: black;
+	.form {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 2.3em;
 }
 
-.whitebox img {
-	width: 15%;
-	margin: 0 auto;
-	text-align: center;
-	padding: 30px 0 0 0;
-	display: block;
+	.giphybox iframe {
+		width: 30%;
+	}
+
+	.suits h2 {
+		font-size: 3em;
+		text-align: center;
+		margin: -50px auto 30px auto;
+		padding: 0;
 }
 
-.beachconditions {
-	width: 100%;
-	margin: 30px auto;
-	display: block;
-	background: white;
-}
-
-.beachconditions h3 {
-	font-size: 2em;
-	margin: 10px auto;
-	padding: 0 30px;
-	line-height: 1.6;
-	color: grey;
-	letter-spacing: .02em;
-}
-
-.conditions {
-	width: 100%;
-	padding: 10px;
-}
-
-
-.beachbutton {
-	width: 40%;
-	background: black;
-	margin: 30px auto;
-	padding: 10px;
-	text-align: center;
-	transition: all 0.2s ease 0s;
-}
-
-.beachbutton a {
-	font-size: 1.8em;
-	margin: 0 auto;
-	padding: 10px 0;
-	display: block;
-}
-
-.knewavewhite, .knewaveblack {
-	font-size: 3em;
-	letter-spacing: .3em;
-	padding: 30px 0;
-}
-
-.schools {
-	width: 100%;
-	margin: 5px auto;
-	padding: 0;
-	display: block;
-}
-
-.school {
-	margin: 0 auto;
-	width: 100%;
-}
-
-.school a, h3 {
-	font-size: 1.3em;
-	line-height: 1.3;
-	letter-spacing: 0.06em;
-	text-align: left;
-	margin: 0;
-	display: block;
-	width: 100%;
-}
-
-.school p {
-	font-size: 1.3em;
-	line-height: 1.5em;
-	margin: 0;
-	text-align: left;
-	width: 100%;
-}
-
-.school img {
-	width: 220px;
-	height: 220px;
-	margin: 20px auto;
-	display: block;
-}
-
-.main {
-	padding: 20px;
-}
-
-#instagallery {
-	margin: 0 auto;
-	width: 100%;
-	padding-bottom: 100px;
-}
-
-.instabox img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-
-.instabox {
-	margin: 20px;
-	display: center;
-}
-
-.instabox p {
-	color: white;
-	font-size: 1.6em;
-	margin: 0;
-	padding: 0;
-}
-
-.instarow {
-	display: block;
-	justify-content: center;
-	padding: 0 20px 0 20px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.filmrow {
-	display: block;
-	justify-content: center;
-	padding: 0 20px 0 20px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-#movies {
-	margin: 0 auto;
-	width: 100%;
-	padding: 10px;
-	background-color: black;
-}
-
-#movies p {
-	text-align: center;
-	font-size: 1.5em;
-	letter-spacing: 0.006em;
-	margin: -40px auto 20px auto;
-	padding-bottom: 30px;
-	color: white;
-}
-
-.moviebox {
-	margin: 20px auto;
-	text-align: center;
-	width: 100%;
-}
-
-.moviebox img {
-	height: 400px;
-}
-
-#endless {
-	font-size: 1.8em;
-	line-height: 2;
-	letter-spacing: 0.04em;
-	margin: 10px auto 30px auto;
-	width: 90%;
-}
-
-#videocontainer {
-	width: 75%;
-	margin: 0 auto;
-	padding-bottom: 100px;
-	text-align: center;
-}
-
-#videocontainer img {
-	width: 25%;
-	display: block;
-	margin: 100px auto 0 auto;
-}
-
-.photogallery {
-	width: 95%;
-	margin: 10px auto;
-	padding-bottom: 10px;
-	display: block;
-}
-
-.photogallery img {
-	width: 95px;
-	height: 95px;
-	margin: 0 auto;
-	display: block;
-	padding: 10px;
-	border-radius: 50%;
-}
-
-#boardicons {
-	margin: 0 auto;
-	padding: 0;
-	align-items: center;
-	display: block;
-	width: 100%;
-}
-
-.boardicon {
-	margin: 0 auto 300px auto;
-	height: 500px;
-	width: 95%;
-	position: relative;
-}
-
-.boardicon p {
-	background-color: #03b73f;
-	opacity: .95;
-	font-size: 0.8em;
-	line-height: 1.4;
-	letter-spacing: 0.004em;
-	color: white;
-	font-family: 'Georgia', serif;
-	margin: 0 auto;
-	padding: 15px;
-	top: 300px;
-	z-index: 100;
-	position: absolute;
-	width: 100%;
-	display: none;
-}
-
-.board img {
-	display: block;
-	width: 90%;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	bottom: 400px;
-}
-
-	footer {
+	#tempgiphys {
 		display: none;
-		background-color: black;
+	}
+
+	#tempbuttons {
+		margin: -40px 0 40px 0;
+	}
+
+	.tempbutton p {
+		font-size: 2em;
+	}
+
+	.instagramvideo {
+		margin: -50px 0 50px 0;
+		height: 400px;
+	}
+
+	.instagramvideo p {
+		font-size: 2em;
+		line-height: 1.5;
+	}
+
+	#heroinspiration h1 {
+		font-size: 3.5em;
+		margin: 0 auto;
 		width: 100%;
-}
+	}
+
+	.main {
+		padding: 20px;
+	}
+
+	.bluebox {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	#instagallery {
+		margin: 0 auto;
+		width: 100%;
+		padding-bottom: 0;
+	}
+
+	.instabox img:hover {
+	    opacity: 0.5;
+	    filter: alpha(opacity=50);
+	}
+
+	.instabox {
+		margin: 0 auto;
+		display: center;
+	}
+
+	.instabox p {
+		color: white;
+		font-size: 1.6em;
+		margin: 0 auto;
+		padding-bottom: 15px;
+	}
+
+	.instarow {
+		display: block;
+		justify-content: center;
+		padding: 0;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.filmrow {
+		display: block;
+		justify-content: center;
+		padding: 0 20px 0 20px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#movies {
+		margin: 0 auto;
+		width: 100%;
+		padding: 10px;
+		background-color: black;
+	}
+
+	#movies p {
+		text-align: center;
+		font-size: 1.5em;
+		letter-spacing: 0.006em;
+		margin: -40px auto 20px auto;
+		padding-bottom: 30px;
+		color: white;
+	}
+
+	.moviebox {
+		margin: 20px auto;
+		text-align: center;
+		width: 100%;
+	}
+
+	.moviebox img {
+		height: 400px;
+	}
+
+	#endless {
+		font-size: 1.8em;
+		line-height: 2;
+		letter-spacing: 0.04em;
+		margin: 10px auto 30px auto;
+		width: 90%;
+	}
+
+	#videocontainer {
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+
+	#videocontainer img {
+		width: 25%;
+		display: block;
+		margin: 50px auto 0 auto;
+	}
+
+	#video { 
+		width: 100%;
+		margin: 0 auto 150px auto;
+		text-align: center;
+		padding-bottom: 100px;
+		position: relative; 
+		padding-bottom: 56.25%; height: 0; 
+		overflow: hidden; 
+		max-width: 100%; 
+	} 
+
+	#video iframe, 
+	#video object, #video 
+		embed { position: absolute; top: 0; 
+		left: 0; width: 100%; height: 100%; 
+	}
+
+	.photogallery {
+		width: 100%;
+		margin: 5px auto;
+		padding-bottom: 5px;
+		display: block;
+	}
+
+	.photogallery img {
+		width: 300px;
+		height: 300px;
+		margin: 0 auto;
+		display: block;
+		padding: 5px;
+		border-radius: 50%;
+	}
+
+		footer {
+			display: none;
+			background-color: black;
+			width: 100%;
+	}
 
 /*footer a {
 		margin: 10px 15px;
@@ -2243,6 +2511,5 @@ footer {
 .mobileitem:hover {
 		background: #03b73f;
 }
-
 
 } /*end of media query for screens between 320 and 480px */
