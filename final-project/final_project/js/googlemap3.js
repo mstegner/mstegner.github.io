@@ -2,21 +2,25 @@
 
 $(document).ready(function () {
 
-	// function initMap() {
-	// 	var newyork = {lat: 40.640162, lng: -73.785403};
-	// 	var map = new google.maps.Map(document.getElementById('map'), {
-	// 	zoom: 11,
-	// 	center: newyork
-	// 	});
+  // function initMap() {
+  //  var newyork = {lat: 40.640162, lng: -73.785403};
+  //  var map = new google.maps.Map(document.getElementById('map'), {
+  //  zoom: 11,
+  //  center: newyork
+  //  });
+
+  var beach1info = $('h4#marker1').text();
+  var beach2info = $('h4#marker2').text();
+  var beach3info = $('h4#marker3').text();
+  var beach4info = $('h4#marker4').text();
 
 
-	var locations = [
-		['Beach 92nd Street, Rockaway', 40.583634, -73.814789,],
-		['Beach 67th Street, Rockaway', 40.5909, -73.7969],
-		['Lincoln Boulevard, Long Beach', 40.582857, -73.652380],
-		['National Boulevard, Long Beach', 40.583659, -73.666846],
-	];
-
+  var locations = [
+    ['beach1info', 40.583634, -73.814789],
+    [beach2info, 40.5909, -73.7969],
+    [beach3info, 40.582857, -73.652380],
+    [beach4info, 40.583659, -73.666846],
+  ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
@@ -26,21 +30,26 @@ $(document).ready(function () {
 
     var infowindow = new google.maps.InfoWindow();
 
-    var marker, i;
+    var marker, index;
 
-    for (i = 0; i < locations.length; i++) {  
+    for (index = 0; index < locations.length; index++) {  
       marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        position: new google.maps.LatLng(locations[index][1], locations[index][2]),
         map: map
       });
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+      google.maps.event.addListener(marker, 'click', (function(marker, index) {
         return function() {
-          infowindow.setContent(locations[i][0]);
+          infowindow.setContent(locations[index][0]);
           infowindow.open(map, marker);
         }
-      })(marker, i,));
+      })(marker, index));
     }
 
+
+
+
+
+// END OF GOOGLE MAPS API js file
 
 })

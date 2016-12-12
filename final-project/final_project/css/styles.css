@@ -180,7 +180,7 @@ header img {
 	height: 200px;
 }
 
-#heroindex, #herobeaches, #herogear, #herolessons, #heroinspiration 
+#heroindex, #herobeaches, #herogear, #heroinspiration 
 	{
 	width: 100%;
 	height: 100vh;
@@ -191,23 +191,19 @@ header img {
 }
 
 #heroindex {
-	background: url("../images/duotone/hero_index_duotone.jpg");
+	background: url("../images/duotone/hero_index_duotone.gif");
 }
 
 #herobeaches {
-	background: url("../images/duotone/hero_lessons2_duotone.jpg");
+	background: url("../images/duotone/hero_lessons2_duotone.gif");
 }
 
 #herogear {
-	background: url("../images/duotone/hero_gear3_duotone.jpg");
-}
-
-#herolessons {
-	background: url("../images/duotone/hero_lessons2_duotone.jpg");
+	background: url("../images/duotone/hero_gear3_duotone.gif");
 }
 
 #herowetsuits {
-	background: url("../images/duotone/hero_wetsuits2_duotone.jpg");
+	background: url("../images/duotone/hero_wetsuits2_duotone.gif");
 	width: 100%;
 	height: 80vh;
 	overflow: none;
@@ -216,7 +212,7 @@ header img {
 }
 
 #heroinspiration {
-	background: url("../images/duotone/hero_inspiration_duotone.jpg");
+	background: url("../images/duotone/hero_inspiration_duotone.gif");
 }
 
 .pagetitle {
@@ -1047,7 +1043,7 @@ footer p {
 		text-decoration: none;
 		background: black;
 		color: white;
-		padding: 10px 0 15px 0;
+		padding: 5px 0 5px 0;
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-size: 1.1em;
 		font-weight: 700;
@@ -1058,7 +1054,7 @@ footer p {
 	}
 
 	#small-nav a:nth-child(1) {
-	padding-top: 90px;
+	padding-top: 80px;
 }
 
 	#burger img {
@@ -1067,53 +1063,57 @@ footer p {
 
 	#heroindex, #herobeaches, #herogear, #heroinspiration {
 		width: 100%;
-		height: 60vh;
+		height: 100vh;
 		margin: 0;
-		padding: 100px 0 20px 0;
+		padding: 40px 0 20px 0;
 		overflow: none;
 		border-bottom: 2px solid #03b73f;
 }
 
 	#heroindex {
-	background: url("../images/duotone/hero_index_duotone_med.jpg");
+	background: url("../images/duotone/hero_index_duotone_med.gif");
 }
 
 	#herobeaches {
-	background: url("../images/duotone/hero_lessons2_duotone_med.jpg");
+	background: url("../images/duotone/hero_lessons2_duotone_med.gif");
 }
 
 	#herogear {
-	background: url("../images/duotone/hero_gear3_duotone_med.jpg");
+	background: url("../images/duotone/hero_gear3_duotone_med.gif");
 }
 
 	#herowetsuits {
-	background: url("../images/duotone/hero_wetsuits2_duotone_med.jpg");
-	width: 100%;
-	margin: 0;
-	padding: 30px;
+		background: url("../images/duotone/hero_wetsuits2_duotone_med.gif");
+		width: 100%;
+		margin: 0;
+		padding: 30px;
 }
 
 	#heroinspiration {
-	background: url("../images/duotone/hero_inspiration_duotone_med.jpg");
+		background: url("../images/duotone/hero_inspiration_duotone_med.gif");
 }
 
 	.pagetitle {
-	width: 60%;
-	margin: 300px auto;
-	padding: 50px;
-	border: 2px solid white;
+		width: 60%;
+		margin: 40vh auto;
+		padding: 50px;
+		border: 2px solid white;
 }
 
-.pagetitle h1 {
-	font-family: 'Knewave', cursive;
-  	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
-	color: white;
-	font-size: 2.5em;
-	letter-spacing: 0.15em;
-	line-height: 1;
-	text-align: center;
-	margin: 0 auto;
-	padding: 0;
+	.pagetitle2 {
+		margin: 25vh auto;
+	}
+
+	.pagetitle h1 {
+		font-family: 'Knewave', cursive;
+	  	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+		color: white;
+		font-size: 2.5em;
+		letter-spacing: 0.15em;
+		line-height: 1;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
 }
 
 .main p {
@@ -1279,26 +1279,26 @@ footer p {
 }
 
 	#heroindex {
-	background: url("../images/duotone/hero_index_duotone_sm.jpg");
+	background: url("../images/duotone/hero_index_duotone_sm.gif");
 }
 
 	#herobeaches {
-	background: url("../images/duotone/hero_lessons2_duotone_sm.jpg");
+	background: url("../images/duotone/hero_lessons2_duotone_sm.gif");
 }
 
 	#herogear {
-	background: url("../images/duotone/hero_gear3_duotone_sm.jpg");
+	background: url("../images/duotone/hero_gear3_duotone_sm.gif");
 }
 
 	#herowetsuits {
-	background: url("../images/duotone/hero_wetsuits2_duotone_sm.jpg");
+	background: url("../images/duotone/hero_wetsuits2_duotone_sm.gif");
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 	#heroinspiration {
-	background: url("../images/duotone/hero_inspiration_duotone_sm.jpg");
+	background: url("../images/duotone/hero_inspiration_duotone_sm.gif");
 }
 
 .pagetitle {
