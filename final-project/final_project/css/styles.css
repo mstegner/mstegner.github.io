@@ -115,15 +115,15 @@ header img {
 
 .aloha {
 		font-family: 'Knewave', cursive;
-		font-size: 3em;
+		font-size: 2.2em;
 		letter-spacing: .1em;
-		padding: 80px 0 20px 0;
+		padding: 1em 0 .5em 0;
 }
 
 .surfterms {
 	width: 100%;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 1em;
 }
 
 
@@ -140,19 +140,19 @@ header img {
 	width: 90%;
 	display: flex;
 	margin: 0 auto;
-	padding: 10px;
+	padding: .1em;
 }
 
 .lingo {
 	width: 8%;
-	height: 200px;
+	height: 11em;
 	margin: 20px;
 	text-align: center;
 	flex: 1;
 	border: .5px solid white;
 }
 
-	.lingo img {
+.lingo img {
 		width: 30%;
 }
 
@@ -164,7 +164,7 @@ header img {
 	text-align: center;
 	flex: 1;
 	margin: 0 auto;
-	padding: 30px;
+	padding: 1em;
 }
 
 .def {
@@ -176,8 +176,8 @@ header img {
 	text-align: center;
 	display: none;
 	margin: 0 auto;
-	padding: 5px;
-	height: 200px;
+	padding: 0;
+	height: 10em;
 }
 
 #heroindex, #herobeaches, #herogear, #heroinspiration 
@@ -185,7 +185,7 @@ header img {
 	width: 100%;
 	height: 100vh;
 	margin: 0;
-	padding: 50px 0;
+	padding: 1em 0;
 	overflow: none;
 	border-bottom: 2px solid #03b73f;
 }
@@ -208,7 +208,7 @@ header img {
 	height: 80vh;
 	overflow: none;
 	margin: 0;
-	padding: 40px;
+	padding: 1em;
 }
 
 #heroinspiration {
@@ -216,9 +216,9 @@ header img {
 }
 
 .pagetitle {
-	width: 60%;
-	margin: 200px auto;
-	padding: 100px;
+	width: 50%;
+	margin: 25vh auto;
+	padding: 3em;
 	border: 2px solid white;
 }
 
@@ -235,14 +235,14 @@ header img {
 }
 
 .pagetitle2 {
-	width: 60%;
-	margin: 300px auto;
-	padding: 60px;
+	width: 50%;
+	margin: 25vh auto;
+	padding: 3em;
 	border: 2px solid white;
 }
 
 .main {
-	padding: 100px;
+	padding: 3em;
 }
 
 .main p {
@@ -263,8 +263,8 @@ header img {
 }
 
 .musicplayer {
-	width: 300px;
-	margin: 30px auto;
+	/*width: 30%;*/
+	margin: 1em auto;
 	text-align: center;
 }
 
@@ -278,14 +278,14 @@ header img {
 
 .movie {
 	margin: 0 auto;
-	padding: 0 100px 0 100px;
+	padding: 0 1em;
 }
 
 .icons {
 	display: inline-flex;
 	justify-content: center;
 	margin: 0 auto;
-	padding: 100px 100px 100px 100px;
+	padding: 1em;
 	width: 100%;
 }
 
@@ -1045,7 +1045,7 @@ footer p {
 		color: white;
 		padding: 5px 0 5px 0;
 		font-family: 'Open Sans Condensed', sans-serif;
-		font-size: 1.1em;
+		font-size: 1em;
 		font-weight: 700;
 	}
 
@@ -1054,7 +1054,7 @@ footer p {
 	}
 
 	#small-nav a:nth-child(1) {
-	padding-top: 80px;
+	padding-top: 4.4em;
 }
 
 	#burger img {
@@ -1063,7 +1063,7 @@ footer p {
 
 	#heroindex, #herobeaches, #herogear, #heroinspiration {
 		width: 100%;
-		height: 100vh;
+		height: 60vh;
 		margin: 0;
 		padding: 40px 0 20px 0;
 		overflow: none;
@@ -1095,7 +1095,7 @@ footer p {
 
 	.pagetitle {
 		width: 60%;
-		margin: 40vh auto;
+		margin: 25vh auto;
 		padding: 50px;
 		border: 2px solid white;
 }
@@ -1122,7 +1122,7 @@ footer p {
 
 .aloha {
 		font-family: 'Knewave', cursive;
-		font-size: 3em;
+		font-size: 1.5em;
 		letter-spacing: .1em;
 		padding: 80px 0 20px 0;
 	}
@@ -1251,14 +1251,14 @@ footer p {
 		text-decoration: none;
 		background: black;
 		color: white;
-		padding: 10px 0;
+		padding: .5em 0;
 		font-family: 'Open Sans Condensed', sans-serif;
 		font-size: 1.4em;
 		font-weight: 700;
 }
 
 	#small-nav a:nth-child(1) {
-	padding-top: 80px;
+	padding-top: 5.25em;
 }
 
 	#small-nav a:hover {
@@ -1271,9 +1271,9 @@ footer p {
 
 	#heroindex, #herobeaches, #herogear, #heroinspiration {
 		width: 100%;
-		height: 100vh;
+		height: 50vh;
 		margin: 0;
-		padding: 100px 0 20px 0;
+		/*padding: 100px 0 20px 0;*/
 		overflow: none;
 		border-bottom: 2px solid #03b73f;
 }
@@ -1319,6 +1319,13 @@ footer p {
 	font-size: 3.3em;
 	letter-spacing: 0.15em;
 	line-height: 1;
+}
+
+.aloha {
+		font-family: 'Knewave', cursive;
+		font-size: 1.3em;
+		letter-spacing: .1em;
+		padding: 80px 0 20px 0;
 }
 
 .main {
@@ -1411,32 +1418,30 @@ footer p {
 
 	.lingo {
 		width: 70%;
-		margin: 30px auto;
+		margin: 1.5em auto;
 		text-align: center;
 		border: .5px solid white;
+		height: 15em;
 }
 
 	.lingo img {
-		width: 30%;
+		width: 5%;
 }
 
 	.word {
-		width: 100%;
-		padding: 50px 0;
+		font-size: 2em;
+		padding: 2em 0;
 		margin: 0 auto;
 		display: block;
 }
 
 	.def {
-		font-family: 'Georgia', serif;
-		font-size: 1.5em;
-		line-height: 1.8;
+		font-size: 1.4em;
+		line-height: 1.3;
 		letter-spacing: .005em;
-		color: white;
-		text-align: center;
 		display: none;
 		margin: 0 auto;
-		padding: 5px;
+		height: 11em;
 }
 
 
@@ -1935,12 +1940,13 @@ footer {
 	.lingo {
 		width: 100%;
 		margin: 0 auto;
+		height: 20em;
 		text-align: center;
 		border-bottom: .5px solid white;
 }
 
 	.lingo img {
-		width: 50%;
+		width: 30%;
 }
 
 	#lastlingodiv {
@@ -1949,9 +1955,8 @@ footer {
 
 
 	.word {
-		font-size: 2.5em;
-		width: 100%;
-		padding: 50px 0;
+		font-size: 3em;
+		padding: 2em 0;
 		margin: 0 auto;
 		display: block;
 }
