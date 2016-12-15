@@ -667,11 +667,6 @@ header img {
 	border-radius: 50%
 }
 
-#shops a:hover {
-	color:#03b73f;
-
-}
-
 .photogallery {
 	width: 90%;
 	margin: 30px auto;
@@ -973,6 +968,33 @@ header img {
 	display: none;
 	float: right;
 	margin-top: 5px;
+}
+
+#shops {
+	text-align: center;
+}
+
+#shops h2 {
+	font-family: 'Knewave', cursive;
+	font-size: 2em;
+	color: white;
+	margin: 0 auto;
+	padding: 3em 0;
+	text-align: center;
+}
+
+#shops p, a {
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+	font-weight: 700;
+	font-size: .9em;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#shops a:hover {
+	color:#03b73f;
 }
 
 footer {
@@ -2175,14 +2197,28 @@ footer {
 		display: block;
 	}
 
-	#shops a {
+
+	#shops {
+		text-align: center;
+	}
+
+	#shops h2 {
+		font-size: 2em;
+		margin: 0 auto;
+		padding: 3em 0;
+		text-align: center;
+	}
+
+	#shops p, a {
+		text-align: center;
+		font-size: .9em;
+		margin: 0 auto;
+		padding: 0 0 5px 0;
 		display: block;
-		padding-bottom: 5px;
 	}
 
 	#shops a:hover {
-		background-color:#03b73f;
-		color: white;
+		color:#03b73f;
 	}
 
 	.surfboards {
