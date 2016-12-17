@@ -675,8 +675,8 @@ header img {
 }
 
 .photogallery img {
-	width: 300px;
-	height: 300px;
+	width: 30em;
+	height: 30em;
 	margin: 0 auto;
 	display: block;
 	padding: 10px;
@@ -971,6 +971,8 @@ header img {
 }
 
 #shops {
+	background: url("../images/surf_shops_1000.jpg");
+	width: 100%;
 	text-align: center;
 }
 
@@ -1226,8 +1228,8 @@ footer p {
 }
 
 .photogallery img {
-	width: 200px;
-	height: 200px;
+	width: 18em;
+	height: 18em;
 	margin: 0 auto;
 	display: block;
 	padding: 10px;
@@ -1368,8 +1370,8 @@ footer p {
 }
 
 .photogallery img {
-	width: 500px;
-	height: 500px;
+	width: 30em;
+	height: 30em;
 	margin: 0 auto;
 	display: block;
 	padding: 5px;
@@ -1746,8 +1748,8 @@ footer p {
 }
 
 .photogallery img {
-	width: 300px;
-	height: 300px;
+	width: 30em;
+	height: 30em;
 	margin: 0 auto;
 	display: block;
 	padding: 5px;
@@ -2205,7 +2207,7 @@ footer {
 	#shops h2 {
 		font-size: 2em;
 		margin: 0 auto;
-		padding: 3em 0;
+		padding: 0;
 		text-align: center;
 	}
 
@@ -2477,41 +2479,17 @@ footer {
 	}
 
 	.photogallery img {
-		width: 300px;
-		height: 300px;
+		width: 30em;
+		height: 30em;
 		margin: 0 auto;
 		display: block;
 		padding: 5px;
 		border-radius: 50%;
 	}
 
-		footer {
-			display: none;
-			background-color: black;
-			width: 100%;
+	footer {
+		display: none;
 	}
-
-/*footer a {
-		margin: 10px 15px;
-		display: inline-block;
-}
-
-	footer img {
-		width: 30px;
-}
-
-
-	footer p {
-		font-family:'Open Sans Condensed', sans-serif;
-		font-weight: 700;
-		font-size: 1.5em;
-		text-align: left;
-		letter-spacing: .05em;
-		color: white;
-		margin: 20px auto;
-		display: block;
-		text-align: center;
-}*/
 
 #mobilefooter {
 	background: black;
