@@ -1803,7 +1803,6 @@ footer {
 	}
 	
 	header {
-		max-width: 100%;
 		display: none;
 	}
 
@@ -1816,8 +1815,6 @@ footer {
 		width: 100%;
 		height: 100vh;
 		margin: 0;
-		/*overflow: none;*/
-		/*border-bottom: 2px solid #03b73f;*/
 }
 
 	#heroindex {
@@ -1848,38 +1845,10 @@ footer {
 	#navbar {
 		display: none;
 	}
-
-/*	#burger {
-		display: block;
-	}
-
-	#burger img {
-		width: 30px;
-	}*/
 	
 	#small-nav {
 		display: none;
 	}
-
-/*	#small-nav a {
-		display: block;
-		text-decoration: none;
-		background: black;
-		color: white;
-		font-size: 2em;
-		font-weight: 700;
-		font-family: 'Open Sans Condensed', sans-serif;
-		padding: 10px 0 10px 0;
-}
-
-	#small-nav a:nth-child(1) {
-		padding-top: 80px;
-	}
-
-
-	#small-nav a:hover {
-		background: #03b73f;
-	}*/
 
 
 	.pagetitle {
@@ -2199,28 +2168,20 @@ footer {
 		display: block;
 	}
 
-
-	#shops {
-		text-align: center;
-	}
-
-	#shops h2 {
-		font-size: 2em;
-		margin: 0 auto;
-		padding: 0;
-		text-align: center;
-	}
-
-	#shops p, a {
-		text-align: center;
-		font-size: .9em;
-		margin: 0 auto;
-		padding: 0 0 5px 0;
+	.photogallery {
+		width: 100%;
+		margin: 5px auto;
+		padding-bottom: 5px;
 		display: block;
 	}
 
-	#shops a:hover {
-		color:#03b73f;
+	.photogallery img {
+		width: 30em;
+		height: 30em;
+		margin: 0 auto;
+		display: block;
+		padding: 5px;
+		border-radius: 50%;
 	}
 
 	.surfboards {
@@ -2341,6 +2302,20 @@ footer {
 
 	.tempbutton p {
 		font-size: 2em;
+	}
+
+	#shops p, a {
+		text-align: center;
+		font-size: .9em;
+		margin: 0 auto;
+		padding: 0 0 5px 0;
+		display: block;
+		font-weight: 700;
+		font-family: 'Open Sans Condensed', serif;
+	}
+
+	#shops a:hover {
+		color:#03b73f;
 	}
 
 	.instagramvideo {
@@ -2466,25 +2441,9 @@ footer {
 	} 
 
 	#video iframe, 
-	#video object, #video 
-		embed { position: absolute; top: 0; 
+	#video object, #video embed {
+		position: absolute; top: 0; 
 		left: 0; width: 100%; height: 100%; 
-	}
-
-	.photogallery {
-		width: 100%;
-		margin: 5px auto;
-		padding-bottom: 5px;
-		display: block;
-	}
-
-	.photogallery img {
-		width: 30em;
-		height: 30em;
-		margin: 0 auto;
-		display: block;
-		padding: 5px;
-		border-radius: 50%;
 	}
 
 	footer {
