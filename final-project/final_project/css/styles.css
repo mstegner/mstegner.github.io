@@ -6,15 +6,16 @@ body {
 	font-size: 16px;
 	max-width: 1200px;
 	margin: 0 auto;
-	background: linear-gradient(to top right, #012266, #1280ed);
+	/*background: linear-gradient(to top right, #457fca, #5691c8);*/
+	background: linear-gradient(to top right, #397bd5, #00d2ff);
 }
 
 #page {
 	background: #012266; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #012266, #1280ed); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #012266, #1280ed); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #012266, #1280ed); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to bottom right, #012266, #1280ed); /* Standard syntax */
+    background: -webkit-linear-gradient(left top, #1A2980, #00d2ff); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(bottom right, #1A2980, #00d2ff); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(bottom right, #1A2980, #00d2ff); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to bottom right, #1A2980, #00d2ff); /* Standard syntax */
 }
 
 p {
@@ -149,7 +150,8 @@ header img {
 	margin: 20px;
 	text-align: center;
 	flex: 1;
-	border: .5px solid white;
+	background-color: #43cda2;
+	box-shadow: 0 10px 6px -6px #777;
 }
 
 .lingo img {
@@ -289,35 +291,10 @@ header img {
 	width: 100%;
 }
 
-.iconbox{
-	width: 30%;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-
-.iconbox p, a {
-	text-align: center;
-	font-size: 1.2em;
-	font-family: 'Knewave', sans-serif;
-	letter-spacing: .1em;
-	color: white;
-	margin-top: 0;
-	padding: 0;
-	text-decoration: none;
-}
-
-.iconbox p:hover {
-	color: #03b73f;
-}
-
 .giphybox {
 	width: 30%;
 	margin: 0 auto;
 	padding: 0 10px;
-}
-
-.iconbubble {
-	margin: 0 auto 10px auto;
 }
 
 #map {
@@ -974,14 +951,14 @@ header img {
 	background: url("../images/surf_shops_1000.jpg");
 	width: 100%;
 	text-align: center;
+	padding: 3em;
 }
 
 #shops h2 {
 	font-family: 'Knewave', cursive;
-	font-size: 2em;
+	font-size: 2.5em;
+	letter-spacing: 0.1em;
 	color: white;
-	margin: 0 auto;
-	padding: 3em 0;
 	text-align: center;
 }
 
@@ -990,9 +967,8 @@ header img {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: white;
 	font-weight: 700;
-	font-size: .9em;
-	margin: 0 auto;
-	padding: 0;
+	font-size: 1.4em;
+	text-decoration: none;
 }
 
 #shops a:hover {
@@ -1444,7 +1420,6 @@ footer p {
 		width: 70%;
 		margin: 1.5em auto;
 		text-align: center;
-		border: .5px solid white;
 		height: 15em;
 }
 
@@ -1467,40 +1442,6 @@ footer p {
 		margin: 0 auto;
 		height: 11em;
 }
-
-
-	.icons {
-		display: block;
-		justify-content: center;
-		margin: 0 auto;
-		padding: 50px 100px 100px 100px;
-		width: 100%;
-	}
-
-	.iconbox{
-		width: 50%;
-		margin: 0 auto;
-		padding: 0;
-	}
-
-	.iconbox p, a {
-		text-align: center;
-		font-size: 1.2em;
-		font-family: 'Knewave', sans-serif;
-		letter-spacing: .1em;
-		color: white;
-		margin-top: 0;
-		padding: 0;
-		text-decoration: none;
-	}
-
-	.iconbox p:hover {
-		color: #03b73f;
-	}
-
-	.iconbubble {
-		margin: 0 auto 10px auto;
-	}
 
 .beaches {
 		width: 100%
@@ -1935,7 +1876,6 @@ footer {
 		margin: 0 auto;
 		height: 20em;
 		text-align: center;
-		border-bottom: .5px solid white;
 }
 
 	.lingo img {
@@ -1944,8 +1884,7 @@ footer {
 
 	#lastlingodiv {
 		margin-bottom: 200px;
-	}
-
+}
 
 	.word {
 		font-size: 3em;
@@ -1953,7 +1892,6 @@ footer {
 		margin: 0 auto;
 		display: block;
 }
-
 	.def {
 		font-family: 'Georgia', serif;
 		font-size: 2em;
@@ -1978,40 +1916,6 @@ footer {
 		margin: 0 auto 50px auto;
 		padding: 0;
 }
-
-
-	.icons {
-		display: block;
-		justify-content: center;
-		margin: 0 auto;
-		padding: 50px 100px 100px 100px;
-		width: 100%;
-	}
-
-	.iconbox{
-		width: 50%;
-		margin: 0 auto;
-		padding: 0;
-	}
-
-	.iconbox p, a {
-		text-align: center;
-		font-size: 1.2em;
-		font-family: 'Knewave', sans-serif;
-		letter-spacing: .1em;
-		color: white;
-		margin-top: 0;
-		padding: 0;
-		text-decoration: none;
-	}
-
-	.iconbox p:hover {
-		color: #03b73f;
-	}
-
-	.iconbubble {
-		margin: 0 auto 10px auto;
-	}
 
 	.main img {
 		width: 50%;
@@ -2122,14 +2026,6 @@ footer {
 		letter-spacing: .3em;
 		padding: 80px 0 10px 0;
 	}
-
-	.aloha {
-		font-family: 'Knewave', cursive;
-		font-size: 3em;
-		letter-spacing: .1em;
-		padding: 80px 0 20px 0;
-	}
-
 
 	.schools {
 		width: 100%;
@@ -2281,10 +2177,6 @@ footer {
 		font-size: 2.3em;
 }
 
-	.giphybox iframe {
-		width: 30%;
-	}
-
 	.suits h2 {
 		font-size: 3em;
 		text-align: center;
@@ -2304,14 +2196,14 @@ footer {
 		font-size: 2em;
 	}
 
-	#shops p, a {
+	#shops a {
 		text-align: center;
 		font-size: .9em;
 		margin: 0 auto;
-		padding: 0 0 5px 0;
 		display: block;
 		font-weight: 700;
 		font-family: 'Open Sans Condensed', serif;
+		text-decoration: none;
 	}
 
 	#shops a:hover {

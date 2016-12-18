@@ -51,7 +51,6 @@ $('#burger').click(function () {
 	})
 
 	$('.lingo').mouseleave(function (){
-		$(this).css('border', '.5px solid white');
 		$(this).find('h4').css('display', 'block');
 		$(this).find('p').css('display', 'none')
 		$(this).find('img').css('width', '20%')
