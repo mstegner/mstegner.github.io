@@ -9,14 +9,14 @@ $(document).ready(function () {
   //  center: newyork
   //  });
 
-  var beach1info = $('h4#marker1').text();
-  var beach2info = $('h4#marker2').text();
-  var beach3info = $('h4#marker3').text();
-  var beach4info = $('h4#marker4').text();
+  var beach1info = $('#beach1text').text();
+  var beach2info = $('#beach2text').text();
+  var beach3info = $('#beach3text').text();
+  var beach4info = $('#beach4text').text();
 
 
   var locations = [
-    ['beach1info', 40.583634, -73.814789],
+    [beach1info, 40.583634, -73.814789],
     [beach2info, 40.5909, -73.7969],
     [beach3info, 40.582857, -73.652380],
     [beach4info, 40.583659, -73.666846],
