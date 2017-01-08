@@ -9,10 +9,10 @@ $(document).ready(function () {
   //  center: newyork
   //  });
 
-  var beach1info = $('#beach1text').text();
-  var beach2info = $('#beach2text').text();
-  var beach3info = $('#beach3text').text();
-  var beach4info = $('#beach4text').text();
+  var beach1info = $('#beach1text').html();
+  var beach2info = $('#beach2text').html();
+  var beach3info = $('#beach3text').html();
+  var beach4info = $('#beach4text').html();
 
 
   var locations = [
@@ -22,32 +22,29 @@ $(document).ready(function () {
     [beach4info, 40.583659, -73.666846],
   ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
+  var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
       center: new google.maps.LatLng(40.640162, -73.785403),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
-    var infowindow = new google.maps.InfoWindow();
+  var infowindow = new google.maps.InfoWindow();
 
-    var marker, index;
+  var marker, index;
 
-    for (index = 0; index < locations.length; index++) {  
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[index][1], locations[index][2]),
-        map: map
-      });
+  for (index = 0; index < locations.length; index++) {  
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[index][1], locations[index][2]),
+    map: map
+    });
 
-      google.maps.event.addListener(marker, 'click', (function(marker, index) {
-        return function() {
-          infowindow.setContent(locations[index][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, index));
-    }
-
-
-
+    google.maps.event.addListener(marker, 'click', (function(marker, index) {
+      return function() {
+        infowindow.setContent(locations[index][0]);
+        infowindow.open(map, marker);
+      }
+    })(marker, index));
+  }
 
 
 // END OF GOOGLE MAPS API js file

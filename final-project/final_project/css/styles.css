@@ -2211,13 +2211,15 @@ footer {
 	}
 
 	.instagramvideo {
-		margin: -50px 0 50px 0;
-		height: 400px;
+		/*margin: -50px 0 50px 0;
+		height: 400px;*/
+		display: none;
 	}
 
 	.instagramvideo p {
-		font-size: 2em;
-		line-height: 1.5;
+		/*font-size: 2em;
+		line-height: 1.5;*/
+		display: none;
 	}
 
 	#heroinspiration h1 {
@@ -2316,26 +2318,31 @@ footer {
 	}
 
 	#videocontainer img {
-		width: 25%;
+		width: 30%;
 		display: block;
-		margin: 50px auto 0 auto;
+		margin: 10em auto 0 auto;
 	}
 
-	#video { 
-		width: 100%;
+	.video { 
+		/*width: 100%;
 		margin: 0 auto 150px auto;
 		text-align: center;
 		padding-bottom: 100px;
 		position: relative; 
 		padding-bottom: 56.25%; height: 0; 
 		overflow: hidden; 
-		max-width: 100%; 
+		max-width: 100%; */
+		display: none;
 	} 
 
 	#video iframe, 
 	#video object, #video embed {
 		position: absolute; top: 0; 
 		left: 0; width: 100%; height: 100%; 
+	}
+
+	#video {
+		margin-bottom: 15em;
 	}
 
 	footer {
